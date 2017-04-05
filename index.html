@@ -22,11 +22,11 @@
 
 </head> 
 
-<body>
-    <div class="wrapper">
+<body ng-app="app">
+    <div class="wrapper" ng-controller="portifolioController">
         <div class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile" src="assets/images/profile.png" alt="" />
+                <img class="profile" src="assets/images/profile.png" alt="" ng-click="teste()" />
                 <h1 class="name">Mike Lima</h1>
                 <h3 class="tagline">Desenvolvedor Full Stack</h3>
             </div><!--//profile-container-->
@@ -214,6 +214,7 @@
     <!-- Javascript -->          
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <!-- custom js -->
+     <script type="text/javascript" src="assets/js/app.js"></script>   
     <script type="text/javascript" src="assets/js/controller.js"></script>            
 </body>
 </html> 
