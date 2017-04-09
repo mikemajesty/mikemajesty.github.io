@@ -1,9 +1,3 @@
-angular.module('app', ['720kb.tooltips']).config(['tooltipsConfProvider', function configConf(tooltipsConfProvider) {
-  tooltipsConfProvider.configure({
-    'smart':true,
-    'size':'large',
-    'speed': 'slow',
-    'tooltipTemplateUrlCache': true
-    //etc...
-  });
-}]);
+angular.module('app', ['ngSanitize']).config(function($sceDelegateProvider) {
+  $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://srv*.assets.example.com/**']);
+ });
