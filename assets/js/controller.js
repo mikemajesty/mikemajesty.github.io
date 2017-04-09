@@ -40,6 +40,38 @@
 										<li class='list-group-item'>Android <span class='badge'>360 Horas</span></li>
 									</ul>`);
 				}
+				if (language === 'NodeJs') {
+					$scope.title = language;
+					$scope.body = $sce.trustAsHtml(`
+									<ul class='list-group'> 
+										<li class='list-group-item'>ExpressJs <span class='badge'>300 Horas</span></li> 
+										<li class='list-group-item'>Routes <span class='badge'>50 Horas</span></li> 
+										<li class='list-group-item'>Controller <span class='badge'>60 Horas</span></li> 
+										<li class='list-group-item'>Services <span class='badge'>40 Horas</span></li>
+									</ul>`);
+				}
+				if (language === 'SQL') {
+					$scope.title = language;
+					$scope.body = $sce.trustAsHtml(`
+									<ul class='list-group'> 
+										<li class='list-group-item'>Trigger <span class='badge'>10 Horas</span></li> 
+										<li class='list-group-item'>Functions <span class='badge'>15 Horas</span></li> 
+										<li class='list-group-item'>Stored Procedure <span class='badge'>60 Horas</span></li> 
+										<li class='list-group-item'>Views <span class='badge'>40 Horas</span></li>
+									</ul>`);
+				}
+				if (language === 'JavaScript') {
+					$scope.title = language;
+					$scope.body = $sce.trustAsHtml(`
+									<ul class='list-group'> 
+										<li class='list-group-item'>JQuery <span class='badge'>60 Horas</span></li> 
+										<li class='list-group-item'>VueJs <span class='badge'>40 Horas</span></li>
+										<li class='list-group-item'>Angular <span class='badge'>435 Horas</span></li>
+										<li class='list-group-item'>Prototype Patterns <span class='badge'>15 Horas</span></li> 
+										<li class='list-group-item'>JSON Syntax <span class='badge'>10 Horas</span></li> 
+									</ul>`);
+				}
+
 			};
 
 			$scope.teste = function () {
