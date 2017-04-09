@@ -74,6 +74,10 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
   border-radius: 100px;
 }
 .sidebar-wrapper .contact-list .fa {
