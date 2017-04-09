@@ -3,6 +3,8 @@
 	angular.module('app')
 		.controller('portifolioController', ['$scope', '$filter', function ($scope, $filter) {
 
+			$scope.year = (new Date().getFullYear() - 2015);
+			
 			$scope.teste = function () {
 				var pdf = new jsPDF('p', 'pt', 'letter');
 
