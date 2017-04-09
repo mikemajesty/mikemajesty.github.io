@@ -79,9 +79,9 @@
 								onrendered: function (canvas) {
 
 										var imgData = canvas.toDataURL('image/png');
-										var doc = new jsPDF('p', 'mm', [400, 200]); //210mm wide and 297mm high
+										var doc = new jsPDF('p', 'mm', [400, 250]); //210mm wide and 297mm high
 
-										doc.addImage(imgData, 'PNG', -45, -10);
+										doc.addImage(imgData, 'PNG', -4, -0.2);
 										doc.save('sample.pdf');
 									}
 						});
