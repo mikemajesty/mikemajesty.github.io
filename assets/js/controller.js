@@ -17,8 +17,31 @@
 										<li class='list-group-item'>Simple Injector <span class='badge'>10 Horas</span></li> 
 									</ul>`);
 				}
+				if (language === 'Angular') {
+					$scope.title = language;
+					$scope.body = $sce.trustAsHtml(`
+									<ul class='list-group'> 
+										<li class='list-group-item'>Diretivas <span class='badge'>180 Horas</span></li> 
+										<li class='list-group-item'>Routes <span class='badge'>90 Horas</span></li> 
+										<li class='list-group-item'>Controllers <span class='badge'>60 Horas</span></li> 
+										<li class='list-group-item'>Services <span class='badge'>60 Horas</span></li>
+										<li class='list-group-item'>Módulos <span class='badge'>45 Horas</span></li> 
+									</ul>`);
+				}
+				if (language === 'Java') {
+					$scope.title = language;
+					$scope.body = $sce.trustAsHtml(`
+									<ul class='list-group'> 
+										<li class='list-group-item'>Hibernate <span class='badge'>30 Horas</span></li> 
+										<li class='list-group-item'>JSP - Servlet <span class='badge'>180 Horas</span></li> 
+										<li class='list-group-item'>JUnit <span class='badge'>60 Horas</span></li> 
+										<li class='list-group-item'>JSF <span class='badge'>260 Horas</span></li>
+										<li class='list-group-item'>Java 8 <span class='badge'>80 Horas</span></li> 
+										<li class='list-group-item'>Android <span class='badge'>360 Horas</span></li>
+									</ul>`);
+				}
 			};
-			
+
 			$scope.teste = function () {
 
 				/*var pdf = new jsPDF('p', 'pt', 'letter');
