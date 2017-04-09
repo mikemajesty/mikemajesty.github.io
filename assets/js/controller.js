@@ -1,7 +1,7 @@
 (function (angular) {
 	'use strict';
 	angular.module('app')
-		.controller('portifolioController', ['$scope', '$filter', '$sce', function ($scope, $filter, $sce) {
+		.controller('portifolioController', ['$scope', '$filter', '$sce', '$timeout', function ($scope, $filter, $sce, $timeout) {
 
 			$scope.year = (new Date().getFullYear() - 2015);
 
@@ -74,7 +74,7 @@
 
 			};
 
-			$scope.teste = function () {
+			$scope.downloadPdf = function () {
 				html2canvas(document.getElementById("printDiv"), {
 					onrendered: function (canvas) {
 
@@ -83,6 +83,10 @@
 
 						doc.addImage(imgData, 'PNG', -4, -0.2);
 						doc.save('MikeRodriguesDeLima-CV.pdf');
+
+						$timeout(function () {
+								$('#sppiner').modal('toggle');
+						}, 2000);
 					}
 				});
 			};
