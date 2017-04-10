@@ -59,6 +59,7 @@ p {
   text-align: center;
   color: #fff;
 }
+
 .sidebar-wrapper .name {
   font-size: 32px;
   font-weight: 900;
@@ -79,6 +80,7 @@ p {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border-radius: 100px;
+  border: 2px;
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
