@@ -75,6 +75,7 @@
 			};
 
 			$scope.downloadPdf = function () {
+				$(".profile").css("display", "none");
 				$("#user").css("display", "none");
 				$("#exp").css("display", "none");
 				$("#project").css("display", "none");
@@ -85,7 +86,7 @@
 					onrendered: function (canvas) {
 
 						var imgData = canvas.toDataURL('image/png');
-						var doc = new jsPDF('p', 'mm', [400, 250]);
+						var doc = new jsPDF('p', 'mm', [390, 250]);
 
 						doc.addImage(imgData, 'PNG', -4, -0.2);
 						doc.save('MikeRodriguesDeLima-CV.pdf');
@@ -96,6 +97,7 @@
 							$("#exp").css("display", "");
 							$("#project").css("display", "");
 							$("#skill").css("display", "");
+							$(".profile").css("display", "");
 						}, 2000);
 					}
 				});
