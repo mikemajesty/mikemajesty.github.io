@@ -5,6 +5,24 @@
 
 			$scope.year = (new Date().getFullYear() - 2015);
 
+			$scope.changeLanguage = (language) => {
+				if (language === 'BR') {
+					$("#introduction").text(`Tenho ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
+                            em diversas plataformas como: C#, Java, NodeJs e Angular, sempre obtendo protagonismo nos projetos
+                            que participei . Bacharel em sistemas de informação, convivi com diversos desafios nesse período
+                            devido a minha proatividade e dinamismo, sempre surpreendendo nos desafios atribuídos.`);
+					$('.tagline').text('Desenvolvedor Full Stack');
+				}
+				if (language === 'SP') {
+					$("#introduction").text(`Tengo ${$scope.year} años de experiencia en el desarrollo web en proyectos financieros y al por menor, con experiencia en múltiples plataformas como C #, Java, NodeJS y ángulo, obteniendo siempre papel en los proyectos que participaron. La licenciatura en sistemas de información, vivió con muchos desafíos en este periodo debido a mi proactividad y dinamismo, siempre sorprendiendo a los desafíos asignados.`);
+					$('.tagline').text('Desarrollador Full Stack');
+				}
+				if (language === 'US' || language === 'UK') {
+					$("#introduction").text(`I have ${$scope.year} years of experience in web development in financial and retail projects, with experience in several platforms such as C #, Java, NodeJs and Angular, always taking center stage in the projects I participated in. Bachelor in information systems, I lived with several challenges in this period due to my proactivity and dynamism, always surprising in the challenges assigned.`);
+					$('.tagline').text('Full Stack Developer');
+				}
+			};
+
 			$scope.changeModalText = (language) => {
 				if (language === 'C#') {
 					$scope.title = language;
