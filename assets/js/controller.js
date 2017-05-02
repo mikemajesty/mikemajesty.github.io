@@ -12,14 +12,26 @@
                             que participei . Bacharel em sistemas de informação, convivi com diversos desafios nesse período
                             devido a minha proatividade e dinamismo, sempre surpreendendo nos desafios atribuídos.`);
 					$('.tagline').text('Desenvolvedor Full Stack');
+					$('#perfil').text("PERFIL PROFISSIONAL");
+					$("#formacao").text("Formação");
+					$("#faculdade").text("Faculdade Barão de Piratininga");
+					$("#curso").text("Sistemas de Informação");
 				}
 				if (language === 'SP') {
 					$("#introduction").text(`Tengo ${$scope.year} años de experiencia en el desarrollo web en proyectos financieros y al por menor, con experiencia en múltiples plataformas como C #, Java, NodeJS y ángulo, obteniendo siempre papel en los proyectos que participaron. La licenciatura en sistemas de información, vivió con muchos desafíos en este periodo debido a mi proactividad y dinamismo, siempre sorprendiendo a los desafíos asignados.`);
 					$('.tagline').text('Desarrollador Full Stack');
+					$('#perfil').text("PERFIL PROFESIONAL");
+					$("#formacao").text("Formación");
+					$("#faculdade").text("Facultad Barão de Piratininga");
+					$("#curso").text("Sistema de Información");
 				}
 				if (language === 'US' || language === 'UK') {
 					$("#introduction").text(`I have ${$scope.year} years of experience in web development in financial and retail projects, with experience in several platforms such as C #, Java, NodeJs and Angular, always taking center stage in the projects I participated in. Bachelor in information systems, I lived with several challenges in this period due to my proactivity and dynamism, always surprising in the challenges assigned.`);
 					$('.tagline').text('Full Stack Developer');
+					$('#perfil').text("PROFESSIONAL PROFILE");
+					$("#formacao").text("Formation");
+					$("#faculdade").text("Faculty Barão de Piratininga");
+					$("#curso").text("Information Systems");
 				}
 			};
 
