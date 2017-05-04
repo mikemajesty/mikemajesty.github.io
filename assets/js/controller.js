@@ -16,6 +16,10 @@
 					$("#formacao").text("Formação");
 					$("#faculdade").text("Faculdade Barão de Piratininga");
 					$("#curso").text("Sistemas de Informação");
+					$("#idiomas").text("IDIOMAS");
+					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
+					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
+					
 				}
 				if (language === 'SP') {
 					$("#introduction").text(`Tengo ${$scope.year} años de experiencia en el desarrollo web en proyectos financieros y al por menor, con experiencia en múltiples plataformas como C #, Java, NodeJS y ángulo, obteniendo siempre papel en los proyectos que participaron. La licenciatura en sistemas de información, vivió con muchos desafíos en este periodo debido a mi proactividad y dinamismo, siempre sorprendiendo a los desafíos asignados.`);
@@ -24,6 +28,9 @@
 					$("#formacao").text("Formación");
 					$("#faculdade").text("Facultad Barão de Piratininga");
 					$("#curso").text("Sistema de Información");
+					$("#idiomas").text("IDIOMAS");
+					$("#portugues").html("Portugués <span class='lang-desc' id='nativo'>(Nativo)</span>");
+					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
 				}
 				if (language === 'US' || language === 'UK') {
 					$("#introduction").text(`I have ${$scope.year} years of experience in web development in financial and retail projects, with experience in several platforms such as C #, Java, NodeJs and Angular, always taking center stage in the projects I participated in. Bachelor in information systems, I lived with several challenges in this period due to my proactivity and dynamism, always surprising in the challenges assigned.`);
@@ -32,6 +39,9 @@
 					$("#formacao").text("Formation");
 					$("#faculdade").text("Faculty Barão de Piratininga");
 					$("#curso").text("Information Systems");
+					$("#idiomas").text("LANGUAGES");
+					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
+					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
 				}
 			};
 
