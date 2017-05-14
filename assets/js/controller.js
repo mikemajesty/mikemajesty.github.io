@@ -42,6 +42,7 @@
 					$("#hackzurich").text("(HACK ZURICH 2016) - Aplicação para auxiliar encontrar pessoas em caso de desastres.");
 					$("#payforce").text("(SANTANDER 2016 - Semifinalista) - Carteira digital que usa seu número de celular como token de pagamento.");
 					$("#relato-serasa").text("(SERASA EXPERIAN 2017) - Assistente digital para auxiliar a análise de crédito.");
+					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>Habilidades &amp; Proficiências");
 				}
 				if (language === 'SP') {
 					$("#introduction").text(`Tengo ${$scope.year} años de experiencia en el desarrollo web en proyectos financieros y al por menor, con experiencia en múltiples plataformas como C#, Java, NodeJS y ángulo, obteniendo siempre papel en los proyectos que participaron. La licenciatura en sistemas de información, vivió con muchos desafíos en este periodo debido a mi proactividad y dinamismo, siempre sorprendiendo a los desafíos asignados.`);
@@ -76,6 +77,7 @@
 					$("#hackzurich").text("(HACK ZURICH 2016) - Aplicación para ayudar a encontrar personas en caso de desastres.");
 					$("#payforce").text("(SANTANDER 2016 - Semifinalista) - Cartera digital que utiliza su número de móvil como token de pago.");
 					$("#relato-serasa").text("(SERASA EXPERIAN 2017) - Asistente digital para auxiliar el análisis de crédito.");
+					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>HABILIDADES Y PROFICIENCIAS");
 				}
 				if (language === 'US' || language === 'UK') {
 					$("#introduction").text(`I have ${$scope.year} years of experience in web development in financial and retail projects, with experience in several platforms such as C#, Java, NodeJs and Angular, always taking center stage in the projects I participated in. Bachelor in information systems, I lived with several challenges in this period due to my proactivity and dynamism, always surprising in the challenges assigned.`);
@@ -110,6 +112,7 @@
 					$("#hackzurich").text("(HACK ZURICH 2016) - Application to help find people in case of disasters.");
 					$("#payforce").text("(SANTANDER 2016 - Semifinalist) - Digital wallet that uses your mobile number as payment token.");
 					$("#relato-serasa").text("(SERASA EXPERIAN 2017) - Digital assistant to assist in credit analysis.");
+					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>SKILLS & PROFICIENCIES");
 				}
 			};
 
