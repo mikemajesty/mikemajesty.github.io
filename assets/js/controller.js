@@ -4,6 +4,7 @@
 		.controller('portifolioController', ['$scope', '$filter', '$sce', '$timeout', function ($scope, $filter, $sce, $timeout) {
 
 			$scope.year = (new Date().getFullYear() - 2015);
+			$scope.showSkills = false;
 
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
@@ -186,6 +187,7 @@
 			};
 
 			$scope.downloadPdf = function () {
+				$scope.showSkills = true;
 				$(".profile").css("display", "none");
 				$("#user").css("display", "none");
 				$("#exp").css("display", "none");
@@ -209,6 +211,7 @@
 							$("#project").css("display", "");
 							$("#skill").css("display", "");
 							$(".profile").css("display", "");
+							$scope.showSkills = false;
 						}, 2000);
 					}
 				});
