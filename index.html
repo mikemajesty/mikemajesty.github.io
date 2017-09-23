@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Mike Lima - CV</title>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/font-awesome.min.css">
 </head>
+
 <body ng-app="app">
     <div class="wrapper" ng-controller="portifolioController">
         <div style="background-color: #F5F5F5;">
@@ -113,6 +115,29 @@
                     <h2 class="section-title" id='my-project'>
                         <i id='project' class="fa fa-archive"></i>Projetos
                     </h2>
+
+                    <div class="intro">
+                        <p> <b id="persor-project">Projetos profissionais </b></p>
+                    </div>
+                    <div class="item">
+                        <span class="project-title">
+                        Assaí Atacadista
+                    </span>
+                        <span class="project-tagline" id="banco-votorantim">Java</span>
+                    </div>
+                    <div class="item">
+                        <span class="project-title">
+                            <a href="#" target="_blank">Banco Votorantim - Corretora</a>
+                    </span>
+                        <span class="project-tagline" id="banco-votorantim">C#</span>
+                    </div>
+                    <div class="item">
+                        <span class="project-title">
+                        BR Partners - RH
+                    </span>
+                        <span class="project-tagline" id="banco-votorantim">C#</span>
+                    </div>
+
                     <div class="intro">
                         <p> <b id="persor-project">Projetos pessoais </b></p>
                     </div>
@@ -226,95 +251,6 @@
                     <!--//item-->
                 </section>
                 <!--//section-->
-                <section class="skills-section section">
-                    <h2 class="section-title" id="skill-title"><i id='skill' class="fa fa-rocket"></i>Habilidades &amp; Proficiências</h2>
-                    <div class="skillset">
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('C#')" data-target="#myModal">
-                            <h3 class="level-title">C#</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="80%">
-                                </div>
-                            </div>
-                            <span ng-if="showSkills" style="opacity: 0.5;">Entity Framework, ASP NET MVC, Windows Form, Simple Injector</span>
-                            <!--//level-bar-->
-                        </div>
-                           
-                        <!--//item-->
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('Angular')" data-target="#myModal">
-                            <h3 class="level-title">Angular</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="65%">
-                                </div>
-                            </div>
-                            <span ng-if="showSkills" style="opacity: 0.5;">Directives, Routes, Controller, Service</span>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('Java')" data-target="#myModal">
-                            <h3 class="level-title">Java</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="70%">
-                                </div>
-                            </div>
-                             <span ng-if="showSkills" style="opacity: 0.5;">Hibernate, JSF, Vraptor, Junity, Java 8</span>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('NodeJs')" data-target="#myModal">
-                            <h3 class="level-title">NodeJs</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="68%">
-                                </div>
-                            </div>
-                             <span ng-if="showSkills" style="opacity: 0.5;">Express, Objection, Knex, Joi</span>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('SQL')" data-target="#myModal">
-                            <h3 class="level-title">SQL</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="75%">
-                                </div>
-                            </div>
-                         <span ng-if="showSkills" style="opacity: 0.5;">Oracle, MySQL, SQLServer, Postgre</span>    
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                        <div class="item" style="cursor: pointer;" data-toggle="modal" ng-click="changeModalText('JavaScript')" data-target="#myModal">
-                            <h3 class="level-title">JavaScript</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="60%">
-                                </div>
-                            </div>
-                            <span ng-if="showSkills" style="opacity: 0.5;">Promise, Prototype, Function, Collections</span>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                    </div>
-                </section>
-                <!--//skills-section-->
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">{{title}}</h4>
-                        </div>
-                        <div class="modal-body" ng-bind-html='body'>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="sppiner" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-body" style="width: 200px; height: 600px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; overflow:auto;">
-                    <img style="padding-top: 180%;" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
-                        alt="Foto">
-                </div>
             </div>
             <!-- /.modal -->
             <!--//main-body-->
@@ -333,4 +269,5 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/controller.js"></script>
 </body>
+
 </html>
