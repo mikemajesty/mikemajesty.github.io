@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Mike Lima - CV</title>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mike Lima - Currículo">
     <meta name="author" content="Mike Lima">
-
     <link rel="shortcut icon" href="favicon.ico">
     <link rel='stylesheet' href="assets/plugins/font/font-css.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/font-awesome.min.css">
 </head>
+
 <body ng-app="app">
     <div class="wrapper" ng-controller="portifolioController">
         <div style="background-color: #F5F5F5;">
@@ -110,18 +110,48 @@
                 </section>
                 <!--//section-->
                 <section class="section projects-section">
-
                     <h2 class="section-title" id='my-project'>
-                        <i id='project' class="fa fa-archive"></i>Projetos profissionais
+                        <i id='professional-projects' class="fa fa-archive"></i>Projetos profissionais
                     </h2>
-                    <div class="item">
+                    <div class="item" style="margin-bottom: 1px">
+                        <span class="project-title">
+                        <a href="#" target="_blank">BR Partners</a>
+                    </span> -
+                        <span class="project-tagline" id="banco-votorantim">Sistema de gestão de RH.</span>
+                    </div>
+                    <div class="item" style="font-family: serif; font-weight: bold;">
+                        C#: ASPNET MVC 5, SqlServer.
+                    </div>
+                    <div class="item" style="margin-bottom: 1px">
+                        <span class="project-title">
+                        <a href="#" target="_blank">Assaí Atacadista</a>
+                    </span> -
+                        <span class="project-tagline" id="banco-votorantim">Sistema de conciliação de notas fiscais do sefaz.</span>
+                    </div>
+                    <div class="item" style="font-family: serif; font-weight: bold;">
+                        Java: EJB, JSF, CDI, JPA, PrimeFaces, Oracle.
+                    </div>
+                    <div class="item" style="margin-bottom: 1px">
                         <span class="project-title">
                         <a href="#" target="_blank">Banco Votorantim</a>
                     </span> -
-                        <span class="project-tagline" id="banco-votorantim">Relatório com movimentações de acões da Bovespa.</span>
+                        <span class="project-tagline" id="banco-votorantim">Relatório mensal para clientes com movimentações de acões da Bovespa.</span>
                     </div>
+                    <div class="item" style="font-family: serif; font-weight: bold;">
+                        C#: Windows Form, SqlServer.
+                    </div>
+                    <div class="item" style="margin-bottom: 1px">
+                        <span class="project-title">
+                        <a href="#" target="_blank">Prudential Financial</a>
+                    </span> -
+                        <span class="project-tagline" id="banco-votorantim">Sistema de gestão de eventos para colaboradores.</span>
+                    </div>
+                    <div class="item" style="font-family: serif; font-weight: bold;">
+                        JavaScript: Node JS, MySql.
+                    </div>
+                    
                     <h2 class="section-title" id='my-project'>
-                        <i id='project' class="fa fa-child"></i>Projetos pessoais
+                        <i id='personal-projects' class="fa fa-child"></i>Projetos pessoais
                     </h2>
                     <!--//intro-->
                     <div class="item">
@@ -137,16 +167,13 @@
                     </span> -
                         <span class="project-tagline" id="coovalidator">Biblioteca em c# para validação de TextBox e objetos.</span>
                     </div>
-
-                     <!--//item-->
+                    <!--//item-->
                     <div class="item">
                         <span class="project-title">
                         <a href="https://github.com/mikemajesty/StormReport" target="_blank">Storm Report</a>
                     </span> -
                         <span class="project-tagline" id="stormreport">Biblioteca em C# para facilitar na criação de relatório em ASP.NET</span>
                     </div>
-
-
                     <!--//item-->
                     <div class="item">
                         <span class="project-title">
@@ -236,18 +263,19 @@
                         alt="Foto">
                 </div>
             </div>
-    </div>
-    <!--//footer-->
-    <!-- Javascript -->
-    <script src="assets/plugins/angular/angular.min.js"></script>
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
-    <script src="assets/plugins/jspdf/jspdf.min.js"></script>
-    <script src="assets/plugins/htmlToCanvas/html2canvas.js"></script>
-    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.0-rc.2/angular-sanitize.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/controller.js"></script>
+        </div>
+        <!--//footer-->
+        <!-- Javascript -->
+        <script src="assets/plugins/angular/angular.min.js"></script>
+        <script src="assets/plugins/jquery/jquery.min.js"></script>
+        <script src="assets/plugins/jspdf/jspdf.min.js"></script>
+        <script src="assets/plugins/htmlToCanvas/html2canvas.js"></script>
+        <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.0-rc.2/angular-sanitize.min.js"></script>
+        <!-- custom js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/controller.js"></script>
 </body>
+
 </html>

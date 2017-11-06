@@ -36,7 +36,7 @@
 					$("#beaconmusic").text("Jukebox para pubs, integrado com um aplicativo mobile.");
 					$("#cooldatagrid").text("Biblioteca em c# para melhorar a interface de um DataGridView.");
 					$("#legendofgithub").text("Jogo baseado nas estatísticas do github do usuário.");
-					
+
 					//projetos hackaton
 					$("#pagfarma").text("(GS1 BRASIL 2016 - Campeão) - Aplicativo mobile para leilão reverso de remédios.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Campeão) - Chatbot para auxiliar o empreendedor a iniciar seu negócio.");
@@ -119,7 +119,8 @@
 				$(".profile").css("display", "none");
 				$("#user").css("display", "none");
 				$("#exp").css("display", "none");
-				$("#project").css("display", "none");
+				$("#professional-projects").css("display", "none");
+				$("#personal-projects").css("display", "none");
 				$("#skill").css("display", "none");
 				$("#foto").css("border-radius", "100px");
 
@@ -136,7 +137,8 @@
 							$('#sppiner').modal('toggle');
 							$("#user").css("display", "");
 							$("#exp").css("display", "");
-							$("#project").css("display", "");
+							$("#professional-projects").css("display", "");
+							$("#personal-projects").css("display", "");
 							$("#skill").css("display", "");
 							$(".profile").css("display", "");
 							$scope.showSkills = false;
