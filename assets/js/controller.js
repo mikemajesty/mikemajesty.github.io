@@ -33,7 +33,7 @@
 					$("#banco-votorantim").text("Relatório mensal com movimentações de ações da Bovespa.");
 					$("#prudential").text("Sistema de gestão de eventos.");
 					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
-					
+
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
 					$("#chocobo").text("Componente de calendário para range de datas em AngularJs.");
@@ -146,6 +146,9 @@
 				$("#professional-projects").css("display", "none");
 				$("#personal-projects").css("display", "none");
 				$("#skill").css("display", "none");
+				$("#statisticas").css("display", "none");
+				$("#foruns").css("display", "none");
+
 				$("#foto").css("border-radius", "100px");
 
 				html2canvas(document.getElementById("printDiv"), {
@@ -165,6 +168,8 @@
 							$("#personal-projects").css("display", "");
 							$("#skill").css("display", "");
 							$(".profile").css("display", "");
+							$("#statisticas").css("display", "");
+							$("#foruns").css("display", "");
 							$scope.showSkills = false;
 						}, 2000);
 					}
