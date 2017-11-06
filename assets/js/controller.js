@@ -27,7 +27,7 @@
 					$("#job-desc-tegra").text("Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.");
 					$("#tegra-job-time").text("2015 - Atualmente");
 					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Projetos profissionais");
-					$("#personal-projects").html("<i id='project' class='fa fa-archive'></i>Projetos pessoais");
+					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Projetos pessoais");
 					$("#br-partners").text("Sistema de gestão de RH.");
 					$("#assai").text("Sistema de conciliação de notas fiscais do Sefaz.");
 					$("#banco-votorantim").text("Relatório mensal com movimentações de ações da Bovespa.");
@@ -70,7 +70,7 @@
 					$("#jobtegra-title").text("Desarrollador Web");
 					$("#job-desc-tegra").text("Desarrollo en diversas plataformas y lenguajes como C#, Java, Node Js y Angular.");
 					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Proyectos profesionales");
-					$("#personal-projects").html("<i id='project' class='fa fa-archive'></i>Proyectos personales");
+					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Proyectos personales");
 					$("#tegra-job-time").text("2015 - Actualmente");
 					$("#br-partners").text("Sistema de gestión de recursos humanos.");
 					$("#assai").text("Sistema de conciliación de billetes fiscales del Sefaz.");
@@ -112,7 +112,7 @@
 					$("#job-desc-tegra").text("Development in several platforms and languages like C#, Java, Node Js and Angular.");
 					$("#tegra-job-time").text("2015 - Currently");
 					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Professional Projects");
-					$("#personal-projects").html("<i id='project' class='fa fa-archive'></i>Personal projects");
+					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Personal projects");
 					$("#br-partners").text("Human Resources Management System.");
 					$("#assai").text("System of reconciliation of invoices of Sefaz.");
 					$("#banco-votorantim").text("Monthly report with Bovespa stock movements.");
