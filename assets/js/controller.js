@@ -146,8 +146,8 @@
 				$("#professional-projects").css("display", "none");
 				$("#personal-projects").css("display", "none");
 				$("#skill").css("display", "none");
-				$("#statisticas").css("display", "none");
-				$("#foruns").css("display", "none");
+				$("#statisticas-div").css("display", "none");
+				$("#foruns-div").css("display", "none");
 
 				$("#foto").css("border-radius", "100px");
 
@@ -168,8 +168,8 @@
 							$("#personal-projects").css("display", "");
 							$("#skill").css("display", "");
 							$(".profile").css("display", "");
-							$("#statisticas").css("display", "");
-							$("#foruns").css("display", "");
+							$("#statisticas-div").css("display", "");
+							$("#foruns-div").css("display", "");
 							$scope.showSkills = false;
 						}, 2000);
 					}
