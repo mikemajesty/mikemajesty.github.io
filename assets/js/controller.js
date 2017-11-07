@@ -157,7 +157,7 @@
 				html2canvas(document.getElementById("printDiv"), {
 					onrendered: function (canvas) {
 
-						var imgData = canvas.toDataURL('image/png');
+						var imgData = canvas.toDataURL('image/png', 1.0);
 						var doc = new jsPDF('p', 'mm', [390, 250]);
 
 						doc.addImage(imgData, 'PNG', -4, -0.2);
