@@ -5,7 +5,7 @@
 
 			$scope.year = (new Date().getFullYear() - 2015);
 			$scope.showSkills = false;
-
+			
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
 					$("#introduction").text(`Tenho mais de ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
@@ -32,7 +32,7 @@
 					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Projetos pessoais");
 					$("#br-partners").text("Novo Portal de Recursos Humanos do BR Partners que faz a gestão de todo o departamento. O sistema possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios que agregaram muito para o banco.");
 					$("#assai").text("Sistema de conciliação de Notas fiscais, o sistema permite a comparação entre notas fiscais lançadas pelo Sefaz com as notas fiscais lançadas manualmente pelo departamento fiscal do Assaí, oferecendo uma rápida validação se existe discrepância entre os lançamentos.");
-					$("#banco-votorantim").text("Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, oferecendo uma análise precisa com gráficos e estatísticas.");
+					$("#banco-votorantim").text("elatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, oferecendo uma análise precisa com gráficos e estatísticas.");
 					$("#prudential").text("Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos o sistema obteve um grande destaque entre os gestores.");
 					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
 					$("#horus").text("ERP que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
