@@ -23,19 +23,19 @@
 					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiências");
-					$("#jobtegra-title").text("Desenvolvedor Web");
+					$("#jobtegra-title").text("Desenvolvedor Full Stack");
 					$("#jobfatec-title").text("Estagiário em TI");
 					$("#job-desc-tegra").text("Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.");
 					$("#tegra-job-time").text("Jan/2016 - Atualmente");
 					$("#job-desc-fatec").text("Desenvolvimento de consultas em banco de dados Oracle.");
 					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Projetos profissionais");
 					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Projetos pessoais");
-					$("#br-partners").text("Novo Portal de Recursos Humanos do BRPartners que faz a gestão de todo o departamento. O sistema possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios que agregaram muito para o banco.");
-					$("#assai").text("Sistema de conciliação de Notas fiscais, o sistema permite a comparar notas fiscais lançadas pelo Sefaz de cada com os lançamentos do departamento fiscal do Assaí, fazendo uma rápida verificação se existe discrepância entre os mesmos.");
-					$("#banco-votorantim").text("Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, fazendo uma análise precisa com gráficos e estatísticas.");
+					$("#br-partners").text("Novo Portal de Recursos Humanos do BR Partners que faz a gestão de todo o departamento. O sistema possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios que agregaram muito para o banco.");
+					$("#assai").text("Sistema de conciliação de Notas fiscais, o sistema permite a comparação entre notas fiscais lançadas pelo Sefaz com as notas fiscais lançadas manualmente pelo departamento fiscal do Assaí, oferecendo uma rápida validação se existe discrepância entre os lançamentos.");
+					$("#banco-votorantim").text("Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, oferecendo uma análise precisa com gráficos e estatísticas.");
 					$("#prudential").text("Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos o sistema obteve um grande destaque entre os gestores.");
 					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
-					$("horus").text("Sistema que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
+					$("#horus").text("ERP que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
 
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
@@ -70,19 +70,19 @@
 					$("#portugues").html("Portugués <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiencias");
-					$("#jobtegra-title").text("Desarrollador Web");
+					$("#jobtegra-title").text("Desarrollador Full Stack");
 					$("#jobfatec-title").text("Aprendiz de TI");
 					$("#job-desc-tegra").text("Desarrollo en diversas plataformas y lenguajes como C#, Java, Node Js y Angular.");
 					$("#job-desc-fatec").text("Desarrollo de consultas en base de datos Oracle.");
 					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Proyectos profesionales");
 					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Proyectos personales");
 					$("#tegra-job-time").text("Jan/2016 - Actualmente");
-					$("#br-partners").text("Nuevo Portal de Recursos Humanos de BRPartners que hace la gestión de todo el departamento. El sistema posibilitó en un acompañamiento excelente de las actividades de los empleados, con métricas e informes que agregaron mucho para el banco.");
-					$("#assai").text("El sistema permite conciliar facturas contabilizadas por el Sefaz de cada uno con los lanzamientos del departamento fiscal del Assaí, haciendo una rápida verificación si existe discrepancia entre los mismos.");
+					$("#br-partners").text("Nuevo Portal de Recursos Humanos de BR Partners que hace la gestión de todo el departamento. El sistema posibilitó en un acompañamiento excelente de las actividades de los empleados, con métricas e informes que agregaron mucho para el banco.");
+					$("#assai").text("El sistema permite la comparación entre notas fiscales lanzadas por el Sefaz con las notas fiscales lanzadas manualmente por el departamento fiscal del Assaí, ofreciendo una rápida validación si existe discrepancia entre los lanzamientos.");
 					$("#banco-votorantim").text("Informe mensual y anual con movimientos de acciones de Bovespa, el sistema permite un seguimiento detallado de todas las acciones en la bolsa de valores de los clientes del banco, haciendo un análisis preciso con gráficos y estadísticas.");
 					$("#prudential").text("El sistema de premiación de colaboradores, el sistema proporciona métricas y estadísticas de cada colaborador, permitiendo así saber entre ellos cuál obtuvo el mayor destaque, por esos motivos el sistema obtuvo un gran destaque entre los gestores.");
 					$("#githubapi").text("API para generar datos estadísticos desde el github del usuario.");
-					$("horus").text("Sistema que controla toda la información de la empresa. El sistema está actualmente en todas las filas de Assaí, que abarca más de 120 tiendas, el sistema administra datos, recursos y procesos, aumentando significativamente el poder del Assaí en la toma de decisiones.");
+					$("#horus").text("ERP que controla toda la información de la empresa. El sistema está actualmente en todas las filas de Assaí, que abarca más de 120 tiendas, el sistema administra datos, recursos y procesos, aumentando significativamente el poder del Assaí en la toma de decisiones.");
 					//projetos
 					$("#persor-project").text("Proyectos personales");
 					$("#chocobo").text("Componente de calendario para rango de fechas en AngularJs.");
@@ -114,18 +114,18 @@
 					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experience");
-					$("#jobtegra-title").text("Web Developer");
+					$("#jobtegra-title").text("Full Stack Developer");
 					$("#jobfatec-title").text("Trainee in IT");
 					$("#job-desc-tegra").text("Development in several platforms and languages like C#, Java, Node Js and Angular.");
 					$("#job-desc-fatec").text("Development of queries in Oracle database.");
 					$("#tegra-job-time").text("Jan/2016 - Currently");
 					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Professional Projects");
 					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Personal projects");
-					$("#br-partners").text("BRPartners New Human Resources Portal that manages the entire department. The system enabled excellent monitoring of employees' activities, with metrics and reports that added a lot to the bank.");
-					$("#assai").text("System of reconciliation of fiscal notes, the system allows to compare invoices issued by the Sefaz of each with the launches of the fiscal department of Assaí, making a quick check if there is discrepancy between them.");
+					$("#br-partners").text("BR Partners New Human Resources Portal that manages the entire department. The system enabled excellent monitoring of employees' activities, with metrics and reports that added a lot to the bank.");
+					$("#assai").text("System of reconciliation of invoices, the system allows the comparison between invoices issued by Sefaz with the invoices manually released by the fiscal department of Assaí, offering a quick validation if there is discrepancy between the launches.");
 					$("#banco-votorantim").text("Monthly and annual report with Bovespa stock movements, the system allows a detailed monitoring of all stock in the stock market of the bank's clients, making an accurate analysis with graphs and statistics.");
 					$("#prudential").text("System for awarding employees, the system provides metrics and statistics of each employee, thus allowing them to know which one got the most prominence, for these reasons the system got a great prominence among the managers.");
-					$("horus").text("System that controls all company information. The system is currently in all branches of Assaí, this covers more than 120 stores, the system manages data, resources and processes, significantly increasing Assaí's power in decision making.");
+					$("#horus").text("ERP that controls all company information. The system is currently in all branches of Assaí, this covers more than 120 stores, the system manages data, resources and processes, significantly increasing Assaí's power in decision making.");
 					//projetos
 					$("#persor-project").text("Personal projects");
 					$("#chocobo").text("Calendar component for date range in AngularJs.");
