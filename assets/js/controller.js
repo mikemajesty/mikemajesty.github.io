@@ -40,13 +40,13 @@
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
 					$("#chocobo").text("Componente de calendário para range de datas em AngularJs.");
-					$("#coovalidator").text("Biblioteca em c# para validação de TextBox e objetos.");
+					$("#coovalidator").text("Biblioteca em C# para validação de TextBox e objetos.");
 					$("#excalibur").text("Componente de Dual List em AngularJs e bootstrap.");
 					$("#vuemonthcalendar").text("Componente para escolha de mês e ano em VueJs e VueMaterial.");
 					$("#stormreport").text("Biblioteca em C# para facilitar na criação de relatório em ASP.NET.");
 					$("#vueduallist").text("Componente de Dual List em VueJs e VueMaterial.");
 					$("#beaconmusic").text("Jukebox para pubs, integrado com um aplicativo mobile.");
-					$("#cooldatagrid").text("Biblioteca em c# para melhorar a interface de um DataGridView.");
+					$("#cooldatagrid").text("Biblioteca em C# para melhorar a interface de um DataGridView.");
 					$("#legendofgithub").text("Jogo baseado nas estatísticas do github do usuário.");
 
 					//projetos hackaton
