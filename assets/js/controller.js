@@ -8,7 +8,7 @@
 
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
-					$("#introduction").text(`Tenho ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
+					$("#introduction").text(`Tenho mais de ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
                             em diversas plataformas como: C#, Java, NodeJs e Angular, sempre obtendo protagonismo nos projetos
                             que participei. Bacharel em sistemas de informação, convivi com diversos desafios nesse período
                             devido a minha proatividade e dinamismo, sempre surpreendendo nos desafios atribuídos.`);
@@ -24,10 +24,12 @@
 					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiências");
 					$("#jobtegra-title").text("Desenvolvedor Web");
+					$("#jobfatec-title").text("Estagiário em TI");
 					$("#job-desc-tegra").text("Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.");
-					$("#tegra-job-time").text("2015 - Atualmente");
-					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Projetos profissionais");
-					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Projetos pessoais");
+					$("#tegra-job-time").text("Jan/2016 - Atualmente");
+					$("#job-desc-fatec").text("Desenvolvimento de consultas em banco de dados Oracle.");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Projetos profissionais");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Projetos pessoais");
 					$("#br-partners").text("Novo Portal de Recursos Humanos do BRPartners que faz a gestão de todo o departamento. O sistema possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios que agregaram muito para o banco.");
 					$("#assai").text("Sistema de conciliação de Notas fiscais, o sistema permite a comparar notas fiscais lançadas pelo Sefaz de cada com os lançamentos do departamento fiscal do Assaí, fazendo uma rápida verificação se existe discrepância entre os mesmos.");
 					$("#banco-votorantim").text("Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, fazendo uma análise precisa com gráficos e estatísticas.");
@@ -69,10 +71,12 @@
 					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiencias");
 					$("#jobtegra-title").text("Desarrollador Web");
+					$("#jobfatec-title").text("Aprendiz de TI");
 					$("#job-desc-tegra").text("Desarrollo en diversas plataformas y lenguajes como C#, Java, Node Js y Angular.");
-					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Proyectos profesionales");
-					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Proyectos personales");
-					$("#tegra-job-time").text("2015 - Actualmente");
+					$("#job-desc-fatec").text("Desarrollo de consultas en base de datos Oracle.");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Proyectos profesionales");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Proyectos personales");
+					$("#tegra-job-time").text("Jan/2016 - Actualmente");
 					$("#br-partners").text("Nuevo Portal de Recursos Humanos de BRPartners que hace la gestión de todo el departamento. El sistema posibilitó en un acompañamiento excelente de las actividades de los empleados, con métricas e informes que agregaron mucho para el banco.");
 					$("#assai").text("El sistema permite conciliar facturas contabilizadas por el Sefaz de cada uno con los lanzamientos del departamento fiscal del Assaí, haciendo una rápida verificación si existe discrepancia entre los mismos.");
 					$("#banco-votorantim").text("Informe mensual y anual con movimientos de acciones de Bovespa, el sistema permite un seguimiento detallado de todas las acciones en la bolsa de valores de los clientes del banco, haciendo un análisis preciso con gráficos y estadísticas.");
@@ -111,10 +115,12 @@
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experience");
 					$("#jobtegra-title").text("Web Developer");
+					$("#jobfatec-title").text("Trainee in IT");
 					$("#job-desc-tegra").text("Development in several platforms and languages like C#, Java, Node Js and Angular.");
-					$("#tegra-job-time").text("2015 - Currently");
-					$("#professional-projects").html("<i id='project' class='fa fa-archive'></i>Professional Projects");
-					$("#personal-projects").html("<i id='project' class='fa fa-child'></i>Personal projects");
+					$("#job-desc-fatec").text("Development of queries in Oracle database.");
+					$("#tegra-job-time").text("Jan/2016 - Currently");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Professional Projects");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Personal projects");
 					$("#br-partners").text("BRPartners New Human Resources Portal that manages the entire department. The system enabled excellent monitoring of employees' activities, with metrics and reports that added a lot to the bank.");
 					$("#assai").text("System of reconciliation of fiscal notes, the system allows to compare invoices issued by the Sefaz of each with the launches of the fiscal department of Assaí, making a quick check if there is discrepancy between them.");
 					$("#banco-votorantim").text("Monthly and annual report with Bovespa stock movements, the system allows a detailed monitoring of all stock in the stock market of the bank's clients, making an accurate analysis with graphs and statistics.");
