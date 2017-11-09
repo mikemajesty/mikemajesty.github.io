@@ -5,7 +5,7 @@
 
 			$scope.year = (new Date().getFullYear() - 2015);
 			$scope.showSkills = false;
-			
+
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
 					$("#introduction").text(`Tenho mais de ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
@@ -18,6 +18,7 @@
 					$("#faculdade").text("Faculdade Barão de Piratininga");
 					$("#curso").text("Sistemas de Informação");
 					$("#idiomas").text("IDIOMAS");
+					$(".modal-title").text("Escolha o formato para Download");
 					$("#statisticas").text("Estatística");
 					$("#foruns").text("Fóruns");
 					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
@@ -36,7 +37,7 @@
 					$("#prudential").text("Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos o sistema obteve um grande destaque entre os gestores.");
 					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
 					$("#horus").text("ERP que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
-
+					$("#modal-close").text("Fechar");
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
 					$("#chocobo").text("Componente de calendário para range de datas em AngularJs.");
@@ -83,6 +84,8 @@
 					$("#prudential").text("El sistema de premiación de colaboradores, el sistema proporciona métricas y estadísticas de cada colaborador, permitiendo así saber entre ellos cuál obtuvo el mayor destaque, por esos motivos el sistema obtuvo un gran destaque entre los gestores.");
 					$("#githubapi").text("API para generar datos estadísticos desde el github del usuario.");
 					$("#horus").text("ERP que controla toda la información de la empresa. El sistema está actualmente en todas las filas de Assaí, que abarca más de 120 tiendas, el sistema administra datos, recursos y procesos, aumentando significativamente el poder del Assaí en la toma de decisiones.");
+					$(".modal-title").text("Seleccione el formato para descargar");
+					$("#modal-close").text("Cerrar");
 					//projetos
 					$("#persor-project").text("Proyectos personales");
 					$("#chocobo").text("Componente de calendario para rango de fechas en AngularJs.");
@@ -111,6 +114,8 @@
 					$("#idiomas").text("LANGUAGES");
 					$("#statisticas").text("Statistic");
 					$("#foruns").text("Forums");
+					$(".modal-title").text("Choose the format for Download");
+					$("#modal-close").text("Close");
 					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experience");
@@ -145,44 +150,6 @@
 					$("#relato-serasa").text("(SERASA EXPERIAN 2017) - Digital assistant to assist in credit analysis.");
 					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>SKILLS & PROFICIENCIES");
 				}
-			};
-
-			$scope.downloadPdf = function () {
-				$scope.showSkills = true;
-				$(".profile").css("display", "none");
-				$("#user").css("display", "none");
-				$("#exp").css("display", "none");
-				$("#professional-projects").css("display", "none");
-				$("#personal-projects").css("display", "none");
-				$("#skill").css("display", "none");
-				$("#statisticas-div").css("display", "none");
-				$("#foruns-div").css("display", "none");
-
-				$("#foto").css("border-radius", "100px");
-
-				html2canvas(document.getElementById("printDiv"), {
-					onrendered: function (canvas) {
-
-						var imgData = canvas.toDataURL('image/png', 1.0);
-						var doc = new jsPDF('p', 'mm', [390, 250]);
-
-						doc.addImage(imgData, 'PNG', -4, -0.2);
-						doc.save('MikeRodriguesDeLima-CV.pdf');
-
-						$timeout(function () {
-							$('#sppiner').modal('toggle');
-							$("#user").css("display", "");
-							$("#exp").css("display", "");
-							$("#professional-projects").css("display", "");
-							$("#personal-projects").css("display", "");
-							$("#skill").css("display", "");
-							$(".profile").css("display", "");
-							$("#statisticas-div").css("display", "");
-							$("#foruns-div").css("display", "");
-							$scope.showSkills = false;
-						}, 2000);
-					}
-				});
 			};
 		}]);
 
