@@ -18,352 +18,377 @@
 <body ng-app="app">
     <div class="wrapper" ng-controller="portifolioController">
         <div style="background-color: #F5F5F5;">
-            <div class="row" style="padding-bottom: 3%;">
-                <div class="span4 col-xs-4">
-                    <div class="document-download">
-                        <a ng-click="downloadPdf()">PDF</a>
-                    </div>
-                </div>
-                <div class="span4 col-xs-4">
-                    <div class="document-download">
-                        <a class="doc" ng-click="downloadPdf()">DOC</a>
-                    </div>
-                </div>
-                <div class="span4 col-xs-4">
-                    <div class="document-download">
-                        <a class="png" ng-click="downloadPdf()">JPG</a>
-                    </div>
-                </div>
-            </div>
-            <hr>
             <div class="row" style="text-align: center;">
-                <a href="#" class="col-xs-3" ng-click="changeLanguage('BR')">
-                    <img alt="Spain" src="assets/images/Brazil.ico" width="50" height="40">
-                </a>
-                <a href="#" class="col-xs-3" ng-click="changeLanguage('US')">
-                    <img alt="Spain" src="assets/images/United-States.ico" width="50" height="40">
-                </a>
-                <a href="#" class="col-xs-3" ng-click="changeLanguage('SP')">
-                    <img alt="Spain" src="assets/images/Spain.ico" width="50" height="40">
-                </a>
-                <a href="#" class="col-xs-3" ng-click="changeLanguage('UK')">
-                    <img alt="Spain" src="assets/images/England.ico" width="50" height="40">
-                </a>
+                <div class="col-xs-9" style="margin-top: -2%;">
+                    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
+                        Download
+                        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="col-xs-3" style="padding-right: 7%;">
+                    <a class="col-xs-3">
+                        <img alt="Brazil" style="cursor: pointer" ng-click="changeLanguage('BR')" src="assets/images/Brazil.ico" width="50" height="40">
+                    </a>
+                    <a class="col-xs-3">
+                        <img alt="United States" style="cursor: pointer" ng-click="changeLanguage('US')" src="assets/images/United-States.ico" width="50" height="40">
+                    </a>
+                    <a class="col-xs-3">
+                        <img alt="Spain" style="cursor: pointer" ng-click="changeLanguage('SP')" src="assets/images/Spain.ico" width="50" height="40">
+                    </a>
+                    <a class="col-xs-3">
+                        <img alt="England" style="cursor: pointer" ng-click="changeLanguage('UK')" src="assets/images/England.ico" width="50" height="40">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div id='printDiv' width="500" height="400">
-            <div class="sidebar-wrapper" style="height: 1755px;min-height: 1528px;">
-                <div class="profile-container">
-                    <img style="width: 180px;" class="profile" src="assets/images/profile.png" />
-                    <h1 class="name">Mike Lima</h1>
-                    <h3 class="tagline">Desenvolvedor Full Stack</h3>
-                </div>
-                <!--//profile-container-->
-                <div class="contact-container container-block">
-                    <ul class="list-unstyled contact-list">
-                        <li class="email">
-                            <i class="fa fa-envelope"></i>
-                            <a href="mailto: mikee_2008@hotmail.com">mikee_2008@hotmail.com</a>
-                        </li>
-                        <li class="github">
-                            <i class="fa fa-github"></i>
-                            <a href="https://github.com/mikemajesty" target="_blank">github.com/mikemajesty</a>
-                        </li>
-                        <li class="linkedin">
-                            <i class="fa fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/mike-lima-77097993/" target="_blank">linkedin.com/mike-lima</a>
-                        </li>
-                        <li class="phone">
-                            <i class="fa fa-phone"></i>
-                            <a href="tel:15997624783">(15) 99762-4783</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--//contact-container-->
-                <div class="education-container container-block">
-                    <h2 class="container-block-title" id="formacao">Formação</h2>
-                    <div class="item">
-                        <h4 class="degree" id="curso">Sistemas de Informação</h4>
-                        <h5 class="meta" id="faculdade">Faculdade Barão de Piratininga</h5>
-                        <div class="time">2013 - 2016</div>
+            <div id='printDiv' width="500" height="400">
+                <div class="sidebar-wrapper" style="height: 1755px;min-height: 1528px;">
+                    <div class="profile-container">
+                        <img style="width: 180px;" class="profile" src="assets/images/profile.png" />
+                        <h1 class="name">Mike Lima</h1>
+                        <h3 class="tagline">Desenvolvedor Full Stack</h3>
                     </div>
-                    <!--//item-->
+                    <!--//profile-container-->
+                    <div class="contact-container container-block">
+                        <ul class="list-unstyled contact-list">
+                            <li class="email">
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto: mikee_2008@hotmail.com">mikee_2008@hotmail.com</a>
+                            </li>
+                            <li class="github">
+                                <i class="fa fa-github"></i>
+                                <a href="https://github.com/mikemajesty" target="_blank">github.com/mikemajesty</a>
+                            </li>
+                            <li class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/mike-lima-77097993/" target="_blank">linkedin.com/mike-lima</a>
+                            </li>
+                            <li class="phone">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:15997624783">(15) 99762-4783</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//contact-container-->
+                    <div class="education-container container-block">
+                        <h2 class="container-block-title" id="formacao">Formação</h2>
+                        <div class="item">
+                            <h4 class="degree" id="curso">Sistemas de Informação</h4>
+                            <h5 class="meta" id="faculdade">Faculdade Barão de Piratininga</h5>
+                            <div class="time">2013 - 2016</div>
+                        </div>
+                        <!--//item-->
+                    </div>
+                    <!--//education-container-->
+                    <div class="languages-container container-block">
+                        <h2 class="container-block-title" id='idiomas'>Idiomas</h2>
+                        <ul class="list-unstyled interests-list">
+                            <li id="portugues">Português
+                                <span class="lang-desc" id='nativo'>(Nativo)</span>
+                            </li>
+                            <li id='ingles'>Inglês
+                                <span class="lang-desc">(Intermediário)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="languages-container container-block">
+                        <h2 class="container-block-title" id='idiomas'>Hackathons</h2>
+                        <ul class="list-unstyled interests-list">
+                            <li id="portugues">GS1 BRASIL - 2016
+                                <br>
+                                <span class="lang-desc" id='nativo'>Campeão</span>
+                                <br>
+                                <a href="https://github.com/mikemajesty/PagFarma-Web" target="_blank">Pag Farma</a>
+                            </li>
+                            <hr style="margin-top: 0px;">
+                            <li id="portugues">SANTANDER - 2016
+                                <br>
+                                <span class="lang-desc" id='nativo'>Semifinalista</span>
+                                <br>
+                                <a href="https://github.com/mikemajesty/pay-force-mobile" target="_blank">Pay Force</a>
+                            </li>
+                            <hr style="margin-top: 0px;">
+                            <li id="portugues">UOL HOST - 2016
+                                <br>
+                                <span class="lang-desc" id='nativo'>Vice Campeão</span>
+                                <br>
+                                <a href="https://github.com/mikemajesty/E-Connect" target="_blank">E-Connect</a>
+                            </li>
+                            <hr style="margin-top: 0px;">
+                            <li id="portugues">HACK ZURICH - 2016
+                                <br>
+                                <a href="https://github.com/mikemajesty/HackZurich-Project" target="_blank">Indoor Messages</a>
+                            </li>
+                            <hr style="margin-top: 0px;">
+                            <li id="portugues">SERASA EXPERIAN - 2017
+                                <br>
+                                <a href="https://github.com/celso-wo/relato-express" target="_blank">Relato Express</a>
+                            </li>
+                            <hr style="margin-top: 0px;">
+                        </ul>
+                    </div>
+                    <div class="languages-container container-block" id="statisticas-div">
+                        <h2 class="container-block-title" id='statisticas'>Estatística</h2>
+                        <ul class="list-unstyled interests-list">
+                            <a href="https://www.nuget.org/profiles/mikemajesty" target="_blank">Nuget</a>
+                        </ul>
+                        <ul class="list-unstyled interests-list">
+                            <a href="https://www.npmjs.com/~mikemajesty" target="_blank">NPM</a>
+                        </ul>
+                    </div>
+                    <div class="languages-container container-block" id='foruns-div'>
+                        <h2 class="container-block-title" id='foruns'>Fóruns</h2>
+                        <ul class="list-unstyled interests-list">
+                            <a href="https://social.msdn.microsoft.com/Profile/Mike%20Lima" target="_blank">MSDN</a>
+                        </ul>
+                    </div>
                 </div>
-                <!--//education-container-->
-                <div class="languages-container container-block">
-                    <h2 class="container-block-title" id='idiomas'>Idiomas</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li id="portugues">Português
-                            <span class="lang-desc" id='nativo'>(Nativo)</span>
-                        </li>
-                        <li id='ingles'>Inglês
-                            <span class="lang-desc">(Intermediário)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="languages-container container-block">
-                    <h2 class="container-block-title" id='idiomas'>Hackathons</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li id="portugues">GS1 BRASIL - 2016
-                            <br>
-                            <span class="lang-desc" id='nativo'>Campeão</span>
-                            <br>
-                            <a href="https://github.com/mikemajesty/PagFarma-Web" target="_blank">Pag Farma</a>
-                        </li>
-                        <hr style="margin-top: 0px;">
-                        <li id="portugues">SANTANDER - 2016
-                            <br>
-                            <span class="lang-desc" id='nativo'>Semifinalista</span>
-                            <br>
-                            <a href="https://github.com/mikemajesty/pay-force-mobile" target="_blank">Pay Force</a>
-                        </li>
-                        <hr style="margin-top: 0px;">
-                        <li id="portugues">UOL HOST - 2016
-                            <br>
-                            <span class="lang-desc" id='nativo'>Vice Campeão</span>
-                            <br>
-                            <a href="https://github.com/mikemajesty/E-Connect" target="_blank">E-Connect</a>
-                        </li>
-                        <hr style="margin-top: 0px;">
-                        <li id="portugues">HACK ZURICH - 2016
-                            <br>
-                            <a href="https://github.com/mikemajesty/HackZurich-Project" target="_blank">Indoor Messages</a>
-                        </li>
-                        <hr style="margin-top: 0px;">
-                        <li id="portugues">SERASA EXPERIAN - 2017
-                            <br>
-                            <a href="https://github.com/celso-wo/relato-express" target="_blank">Relato Express</a>
-                        </li>
-                        <hr style="margin-top: 0px;">
-                    </ul>
-                </div>
-                <div class="languages-container container-block" id="statisticas-div">
-                    <h2 class="container-block-title" id='statisticas'>Estatística</h2>
-                    <ul class="list-unstyled interests-list">
-                        <a href="https://www.nuget.org/profiles/mikemajesty" target="_blank">Nuget</a>
-                    </ul>
-                    <ul class="list-unstyled interests-list">
-                        <a href="https://www.npmjs.com/~mikemajesty" target="_blank">NPM</a>
-                    </ul>
-                </div>
-                <div class="languages-container container-block" id='foruns-div'>
-                    <h2 class="container-block-title" id='foruns'>Fóruns</h2>
-                    <ul class="list-unstyled interests-list">
-                        <a href="https://social.msdn.microsoft.com/Profile/Mike%20Lima" target="_blank">MSDN</a>
-                    </ul>
-                </div>
-            </div>
-            <!--//sidebar-wrapper-->
-            <div class="main-wrapper" style="height: 1755px;min-height: 1528px; padding-top: 4%">
-                <section class="section summary-section">
-                    <h2 class="section-title">
-                        <i id='user' class="fa fa-user">
+                <!--//sidebar-wrapper-->
+                <div class="main-wrapper" style="height: 1755px;min-height: 1528px; padding-top: 4%">
+                    <section class="section summary-section">
+                        <h2 class="section-title">
+                            <i id='user' class="fa fa-user">
                         </i>
-                        <span id="perfil">Perfil Profissional</span>
-                    </h2>
-                    <div class="summary">
-                        <p id="introduction">Tenho mais de {{year}} anos de experiência em desenvolvimento web em projetos f&#236;nanceiros e
-                            varejo, com vivência em diversas plataformas como: C#, Java, NodeJs e Angular, sempre obtendo
-                            protagonismo nos projetos que participei. Bacharel em sistemas de informação, convivi com diversos
-                            desaf&#236;os nesse período devido a minha proatividade e dinamismo, sempre surpreendendo nos
-                            desaf&#236;os atribuídos.</p>
-                    </div>
-                    <!--//summary-->
-                </section>
-                <!--//section-->
-                <section class="section experiences-section">
-                    <h2 class="section-title" id="experience">
-                        <i id='exp' class="fa fa-briefcase"></i>Experiências
-                    </h2>
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title" id="jobfatec-title">Estagiário em TI</h3>
-                                <div class="time">Nov/2014 - Jan/2016</div>
-                            </div>
-                            <!--//upper-row-->
-                            <div class="company">
-                                <a href="http://www.fatecsorocaba.edu.br/" target="_blank">Fatec - Sorocaba</a>
-                            </div>
+                            <span id="perfil">Perfil Profissional</span>
+                        </h2>
+                        <div class="summary">
+                            <p id="introduction">Tenho mais de {{year}} anos de experiência em desenvolvimento web em projetos f&#236;nanceiros
+                                e varejo, com vivência em diversas plataformas como: C#, Java, NodeJs e Angular, sempre obtendo
+                                protagonismo nos projetos que participei. Bacharel em sistemas de informação, convivi com
+                                diversos desaf&#236;os nesse período devido a minha proatividade e dinamismo, sempre surpreendendo
+                                nos desaf&#236;os atribuídos.</p>
                         </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <p id="job-desc-fatec">Desenvolvimento de consultas em banco de dados Oracle.</p>
-                        </div>
-                        <!--//details-->
-                    </div>
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title" id="jobtegra-title">Desenvolvedor Full Stack</h3>
-                                <div class="time" id="tegra-job-time">Jan/2016 - Atualmente</div>
+                        <!--//summary-->
+                    </section>
+                    <!--//section-->
+                    <section class="section experiences-section">
+                        <h2 class="section-title" id="experience">
+                            <i id='exp' class="fa fa-briefcase"></i>Experiências
+                        </h2>
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title" id="jobfatec-title">Estagiário em TI</h3>
+                                    <div class="time">Nov/2014 - Jan/2016</div>
+                                </div>
+                                <!--//upper-row-->
+                                <div class="company">
+                                    <a href="http://www.fatecsorocaba.edu.br/" target="_blank">Fatec - Sorocaba</a>
+                                </div>
                             </div>
-                            <!--//upper-row-->
-                            <div class="company">
-                                <a href="http://www.tegra.com.br/" target="_blank">Tegra - Sorocaba</a>
+                            <!--//meta-->
+                            <div class="details">
+                                <p id="job-desc-fatec">Desenvolvimento de consultas em banco de dados Oracle.</p>
                             </div>
+                            <!--//details-->
                         </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <p id="job-desc-tegra">Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.</p>
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title" id="jobtegra-title">Desenvolvedor Full Stack</h3>
+                                    <div class="time" id="tegra-job-time">Jan/2016 - Atualmente</div>
+                                </div>
+                                <!--//upper-row-->
+                                <div class="company">
+                                    <a href="http://www.tegra.com.br/" target="_blank">Tegra - Sorocaba</a>
+                                </div>
+                            </div>
+                            <!--//meta-->
+                            <div class="details">
+                                <p id="job-desc-tegra">Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.</p>
+                            </div>
+                            <!--//details-->
                         </div>
-                        <!--//details-->
-                    </div>
-                    <!--//item-->
-                </section>
-                <!--//section-->
-                <section class="section projects-section">
-                    <h2 class="section-title" id="p-p">
-                        <i class="fa fa-archive" id='professional-projects'></i>Projetos profissionais
-                    </h2>
-                    <div class="item" style="margin-bottom: 1px">
-                        <span class="project-title">
+                        <!--//item-->
+                    </section>
+                    <!--//section-->
+                    <section class="section projects-section">
+                        <h2 class="section-title" id="p-p">
+                            <i class="fa fa-archive" id='professional-projects'></i>Projetos profissionais
+                        </h2>
+                        <div class="item" style="margin-bottom: 1px">
+                            <span class="project-title">
                             <a href="http://www.brap.com.br/" target="_blank">BR Partners</a>
                         </span> -
-                        <span class="project-tagline" id="br-partners">Novo Portal de Recursos Humanos do BR Partners que faz a gestão de todo o departamento. O sistema
+                            <span class="project-tagline" id="br-partners">Novo Portal de Recursos Humanos do BR Partners que faz a gestão de todo o departamento. O sistema
                             possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios
                             que agregaram muito para o banco.</span>
-                    </div>
-                    <div class="item" style="font-family: serif; font-weight: bold;">
-                        C#: ASPNET MVC 5, Angular, SqlServer.
-                    </div>
-                    <div class="item" style="margin-bottom: 1px">
-                        <span class="project-title">
+                        </div>
+                        <div class="item" style="font-family: serif; font-weight: bold;">
+                            C#: ASPNET MVC 5, Angular, SqlServer.
+                        </div>
+                        <div class="item" style="margin-bottom: 1px">
+                            <span class="project-title">
                             <a href="https://www.assai.com.br/" target="_blank">Assaí Atacadista</a>
                         </span> -
-                        <span class="project-tagline" id="assai">Sistema de conciliação de Notas f&#236;scais, o sistema permite a comparação entre notas f&#236;scais
+                            <span class="project-tagline" id="assai">Sistema de conciliação de Notas f&#236;scais, o sistema permite a comparação entre notas f&#236;scais
                             lançadas pelo Sefaz com as notas f&#236;scais lançadas manualmente pelo departamento f&#236;scal
                             do Assaí, oferecendo uma rápida validação se existe discrepância entre os lançamentos.</span>
-                    </div>
-                    <div class="item" style="font-family: serif; font-weight: bold;">
-                        Java: EJB, JSF, CDI, JPA, JQuery, PrimeFaces, Oracle.
-                    </div>
-                    <div class="item" style="margin-bottom: 1px">
-                        <span class="project-title">
+                        </div>
+                        <div class="item" style="font-family: serif; font-weight: bold;">
+                            Java: EJB, JSF, CDI, JPA, JQuery, PrimeFaces, Oracle.
+                        </div>
+                        <div class="item" style="margin-bottom: 1px">
+                            <span class="project-title">
                             <a href="https://www.bancovotorantim.com.br/web/site/" target="_blank">Banco Votorantim</a>
                         </span> -
-                        <span class="project-tagline" id="banco-votorantim">Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento
+                            <span class="project-tagline" id="banco-votorantim">Relatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento
                             detalhado de todas as ações na bolsa de valores dos clientes do banco, oferecendo uma análise
                             precisa com gráf&#236;cos e estatísticas. </span>
-                    </div>
-                    <div class="item" style="font-family: serif; font-weight: bold;">
-                        C#: Windows Form, JQuery, SqlServer.
-                    </div>
-                    <div class="item" style="margin-bottom: 1px">
-                        <span class="project-title">
+                        </div>
+                        <div class="item" style="font-family: serif; font-weight: bold;">
+                            C#: Windows Form, SqlServer.
+                        </div>
+                        <div class="item" style="margin-bottom: 1px">
+                            <span class="project-title">
                             <a href="https://www.prudential.com/" target="_blank">Prudential Financial</a>
                         </span> -
-                        <span class="project-tagline" id="prudential">Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada
+                            <span class="project-tagline" id="prudential">Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada
                             colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos
                             o sistema obteve um grande destaque entre os gestores.</span>
-                    </div>
-                    <div class="item" style="font-family: serif; font-weight: bold;">
-                        JavaScript: Node JS, Angular, MySql.
-                    </div>
-                    <div class="item" style="margin-bottom: 1px">
-                        <span class="project-title">
+                        </div>
+                        <div class="item" style="font-family: serif; font-weight: bold;">
+                            JavaScript: Node JS, Angular, MySql.
+                        </div>
+                        <div class="item" style="margin-bottom: 1px">
+                            <span class="project-title">
                             <a href="https://www.assai.com.br/" target="_blank">Assaí Atacadista</a>
                         </span> -
-                        <span class="project-tagline" id="horus">ERP que controla todas as informações da empresa. O sistema está atualmente em todas as f&#236;l&#236;as
+                            <span class="project-tagline" id="horus">ERP que controla todas as informações da empresa. O sistema está atualmente em todas as f&#236;l&#236;as
                             do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando
                             signif&#236;camente o poder do Assaí em tomada de decisões.</span>
-                    </div>
-                    <div class="item" style="font-family: serif; font-weight: bold;">
-                        Java: Vraptor, EJB, JSF, CDI, JPA, JQuery, PrimeFaces, Oracle.
-                    </div>
-                    <h2 class="section-title" id="p-pp">
-                        <i class="fa fa-child" id='personal-projects'></i>Projetos pessoais
-                    </h2>
-                    <!--//intro-->
-                    <div class="item">
-                        <span class="project-title">
+                        </div>
+                        <div class="item" style="font-family: serif; font-weight: bold;">
+                            Java: Vraptor, EJB, JSF, CDI, JPA, JQuery, PrimeFaces, Oracle.
+                        </div>
+                        <h2 class="section-title" id="p-pp">
+                            <i class="fa fa-child" id='personal-projects'></i>Projetos pessoais
+                        </h2>
+                        <!--//intro-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/Chocobo-Date-Range-Picker" target="_blank">Chocobo Range Picker</a>
                         </span> -
-                        <span class="project-tagline" id="chocobo">Componente de calendário para range de datas em AngularJs.</span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="chocobo">Componente de calendário para range de datas em AngularJs.</span>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/coolvalidator" target="_blank">Cool Validator</a>
                         </span> -
-                        <span class="project-tagline" id="coovalidator">Biblioteca em C# para validação de TextBox e objetos.</span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="coovalidator">Biblioteca em C# para validação de TextBox e objetos.</span>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/StormReport" target="_blank">Storm Report</a>
                         </span> -
-                        <span class="project-tagline" id="stormreport">Biblioteca em C# para facilitar na criação de relatório em ASP.NET</span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="stormreport">Biblioteca em C# para facilitar na criação de relatório em ASP.NET</span>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/Excalibur-Dual-List" target="_blank">Excalibur Dual List</a>
                         </span> -
-                        <span class="project-tagline" id="excalibur">Componente de Dual List em AngularJs e bootstrap.</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="excalibur">Componente de Dual List em AngularJs e bootstrap.</span>
+                        </div>
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/Vue-Month-Calendar" target="_blank">Vue Month Calendar</a>
                         </span> -
-                        <span class="project-tagline" id="vuemonthcalendar">Componente para escolha de mês e ano em VueJs e VueMaterial.</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="vuemonthcalendar">Componente para escolha de mês e ano em VueJs e VueMaterial.</span>
+                        </div>
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/legend_of_github" target="_blank">Legend of GitHub</a>
                         </span> -
-                        <span class="project-tagline" id="legendofgithub">Jogo baseado nas estatísticas do github do usuário.</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="legendofgithub">Jogo baseado nas estatísticas do github do usuário.</span>
+                        </div>
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/github-scrap-api" target="_blank">GitHub API</a>
                         </span> -
-                        <span class="project-tagline" id="githubapi">API para gerar dados estatísticos a partir do github do usuário.</span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="githubapi">API para gerar dados estatísticos a partir do github do usuário.</span>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/Vue-Dual-List" target="_blank">Vue Dual List</a>
                         </span> -
-                        <span class="project-tagline" id="vueduallist">Componente de Dual List em VueJs e VueMaterial.</span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                            <span class="project-tagline" id="vueduallist">Componente de Dual List em VueJs e VueMaterial.</span>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/BeaconMusic" target="_blank">Beacon Music</a>
                         </span> -
-                        <span class="project-tagline" id="beaconmusic">Jukebox para pubs, integrado com um aplicativo mobile.
+                            <span class="project-tagline" id="beaconmusic">Jukebox para pubs, integrado com um aplicativo mobile.
                         </span>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <span class="project-title">
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <span class="project-title">
                             <a href="https://github.com/mikemajesty/cooldatagridview" target="_blank">Cool DataGridView</a>
                         </span> -
-                        <span class="project-tagline" id="cooldatagrid">Biblioteca em C# para melhorar a interface de um DataGridView.</span>
+                            <span class="project-tagline" id="cooldatagrid">Biblioteca em C# para melhorar a interface de um DataGridView.</span>
+                        </div>
+                        <!--//item-->
+                    </section>
+                    <!--//section-->
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalDowbloadLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalDowbloadLabel">Escolha o formato do arquivo para download</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="padding-bottom: 3%;">
+                                    <div class="span4 col-xs-4">
+                                        <div class="document-download">
+                                            <a ng-click="downloadPdf()">PDF</a>
+                                        </div>
+                                    </div>
+                                    <div class="span4 col-xs-4">
+                                        <div class="document-download">
+                                            <a target="_self" class="doc" href="assets/arquivos/MikeRodriguesDeLima-CV.doc" download="MikeRodriguesDeLima-CV.doc">
+                                                 Word
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span4 col-xs-4">
+                                        <div class="document-download">
+                                            <a target="_self" class="png" href="assets/arquivos/MikeRodriguesDeLima-CV.jpg" download="MikeRodriguesDeLima-CV.jpg">
+                                                 JPG
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" id="modal-close" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
-                    <!--//item-->
-                </section>
-                <!--//section-->
-            </div>
-            <div class="modal fade" id="sppiner" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-body" style="width: 200px; height: 600px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; overflow:auto;">
-                    <img style="padding-top: 180%;" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
-                        alt="Foto">
+                </div>
+                <div class="modal fade" id="sppiner" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-body" style="width: 200px; height: 600px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; overflow:auto;">
+                        <img style="padding-top: 180%;" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+                            alt="Foto">
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Javascript -->
-        <script src="assets/plugins/angular/angular.min.js"></script>
-        <script src="assets/plugins/jquery/jquery.min.js"></script>
-        <script src="assets/plugins/jspdf/jspdf.min.js"></script>
-        <script src="assets/plugins/htmlToCanvas/html2canvas.js"></script>
-        <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.0-rc.2/angular-sanitize.min.js"></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="assets/js/main.js"></script>
-        <script type="text/javascript" src="assets/js/app.js"></script>
-        <script type="text/javascript" src="assets/js/controller.js"></script>
+            <!-- Javascript -->
+            <script src="assets/plugins/angular/angular.min.js"></script>
+            <script src="assets/plugins/jquery/jquery.min.js"></script>
+            <script src="assets/plugins/jspdf/jspdf.min.js"></script>
+            <script src="assets/plugins/htmlToCanvas/html2canvas.js"></script>
+            <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.0-rc.2/angular-sanitize.min.js"></script>
+            <!-- custom js -->
+            <script type="text/javascript" src="assets/js/main.js"></script>
+            <script type="text/javascript" src="assets/js/app.js"></script>
+            <script type="text/javascript" src="assets/js/controller.js"></script>
 </body>
 
 </html>
