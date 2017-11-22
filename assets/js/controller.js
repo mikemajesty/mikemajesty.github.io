@@ -8,9 +8,9 @@
 
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
-					$("#introduction").text(`Tenho ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
+					$("#introduction").text(`Tenho mais de ${$scope.year} anos de experiência em desenvolvimento web em projetos financeiros e varejo, com vivência
                             em diversas plataformas como: C#, Java, NodeJs e Angular, sempre obtendo protagonismo nos projetos
-                            que participei . Bacharel em sistemas de informação, convivi com diversos desafios nesse período
+                            que participei. Bacharel em sistemas de informação, convivi com diversos desafios nesse período
                             devido a minha proatividade e dinamismo, sempre surpreendendo nos desafios atribuídos.`);
 					$('.tagline').text('Desenvolvedor Full Stack');
 					$('#perfil').text("PERFIL PROFISSIONAL");
@@ -18,25 +18,38 @@
 					$("#faculdade").text("Faculdade Barão de Piratininga");
 					$("#curso").text("Sistemas de Informação");
 					$("#idiomas").text("IDIOMAS");
+					$(".modal-title").text("Escolha o formato para Download");
+					$("#statisticas").text("Estatística");
+					$("#foruns").text("Fóruns");
 					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiências");
-					$("#jobtegra-title").text("Desenvolvedor Web");
+					$("#jobtegra-title").text("Desenvolvedor Full Stack");
+					$("#jobfatec-title").text("Estagiário em TI");
 					$("#job-desc-tegra").text("Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.");
-					$("#tegra-job-time").text("2015 - Atualmente");
-					$("#my-project").html("<i id='project' class='fa fa-archive'></i>Projetos");
+					$("#tegra-job-time").text("Jan/2016 - Atualmente");
+					$("#job-desc-fatec").text("Desenvolvimento de consultas em banco de dados Oracle.");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Projetos profissionais");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Projetos pessoais");
+					$("#br-partners").text("Novo Portal de Recursos Humanos do BR Partners que faz a gestão de todo o departamento. O sistema possibilitou em um acompanhamento excelente das atividades dos funcionário, com métricas e relatórios que agregaram muito para o banco.");
+					$("#assai").text("Sistema de conciliação de Notas fiscais, o sistema permite a comparação entre notas fiscais lançadas pelo Sefaz com as notas fiscais lançadas manualmente pelo departamento fiscal do Assaí, oferecendo uma rápida validação se existe discrepância entre os lançamentos.");
+					$("#banco-votorantim").text("elatório mensal e anual com movimentações de ações da Bovespa, o sistema permite um acompanhamento detalhado de todas as ações na bolsa de valores dos clientes do banco, oferecendo uma análise precisa com gráficos e estatísticas.");
+					$("#prudential").text("Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos o sistema obteve um grande destaque entre os gestores.");
+					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
+					$("#horus").text("ERP que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
+					$("#modal-close").text("Fechar");
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
 					$("#chocobo").text("Componente de calendário para range de datas em AngularJs.");
-					$("#coovalidator").text("Biblioteca em c# para validação de TextBox e objetos.");
+					$("#coovalidator").text("Biblioteca em C# para validação de TextBox e objetos.");
 					$("#excalibur").text("Componente de Dual List em AngularJs e bootstrap.");
 					$("#vuemonthcalendar").text("Componente para escolha de mês e ano em VueJs e VueMaterial.");
-					$("#coolreport").text("Biblioteca em c# para gerar relatórios com Entity Framework.");
+					$("#stormreport").text("Biblioteca em C# para facilitar na criação de relatório em ASP.NET.");
 					$("#vueduallist").text("Componente de Dual List em VueJs e VueMaterial.");
 					$("#beaconmusic").text("Jukebox para pubs, integrado com um aplicativo mobile.");
-					$("#cooldatagrid").text("Biblioteca em c# para melhorar a interface de um DataGridView.");
-					$("#comandafacil").text("Sistema de comanda eletronica para comércios.");
-					$("#coolsync").text("Biblioteca em c# para execução em multithread.");
+					$("#cooldatagrid").text("Biblioteca em C# para melhorar a interface de um DataGridView.");
+					$("#legendofgithub").text("Jogo baseado nas estatísticas do github do usuário.");
+
 					//projetos hackaton
 					$("#pagfarma").text("(GS1 BRASIL 2016 - Campeão) - Aplicativo mobile para leilão reverso de remédios.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Campeão) - Chatbot para auxiliar o empreendedor a iniciar seu negócio.");
@@ -53,25 +66,36 @@
 					$("#faculdade").text("Facultad Barão de Piratininga");
 					$("#curso").text("Sistema de Información");
 					$("#idiomas").text("IDIOMAS");
+					$("#statisticas").text("Estadística");
+					$("#foruns").text("Foros de discusión");
 					$("#portugues").html("Portugués <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiencias");
-					$("#jobtegra-title").text("Desarrollador Web");
+					$("#jobtegra-title").text("Desarrollador Full Stack");
+					$("#jobfatec-title").text("Aprendiz de TI");
 					$("#job-desc-tegra").text("Desarrollo en diversas plataformas y lenguajes como C#, Java, Node Js y Angular.");
-					$("#my-project").html("<i id='project' class='fa fa-archive'></i>Proyectos");
-					$("#tegra-job-time").text("2015 - Actualmente");
+					$("#job-desc-fatec").text("Desarrollo de consultas en base de datos Oracle.");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Proyectos profesionales");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Proyectos personales");
+					$("#tegra-job-time").text("Jan/2016 - Actualmente");
+					$("#br-partners").text("Nuevo Portal de Recursos Humanos de BR Partners que hace la gestión de todo el departamento. El sistema posibilitó en un acompañamiento excelente de las actividades de los empleados, con métricas e informes que agregaron mucho para el banco.");
+					$("#assai").text("El sistema permite la comparación entre notas fiscales lanzadas por el Sefaz con las notas fiscales lanzadas manualmente por el departamento fiscal del Assaí, ofreciendo una rápida validación si existe discrepancia entre los lanzamientos.");
+					$("#banco-votorantim").text("Informe mensual y anual con movimientos de acciones de Bovespa, el sistema permite un seguimiento detallado de todas las acciones en la bolsa de valores de los clientes del banco, haciendo un análisis preciso con gráficos y estadísticas.");
+					$("#prudential").text("El sistema de premiación de colaboradores, el sistema proporciona métricas y estadísticas de cada colaborador, permitiendo así saber entre ellos cuál obtuvo el mayor destaque, por esos motivos el sistema obtuvo un gran destaque entre los gestores.");
+					$("#githubapi").text("API para generar datos estadísticos desde el github del usuario.");
+					$("#horus").text("ERP que controla toda la información de la empresa. El sistema está actualmente en todas las filas de Assaí, que abarca más de 120 tiendas, el sistema administra datos, recursos y procesos, aumentando significativamente el poder del Assaí en la toma de decisiones.");
+					$(".modal-title").text("Seleccione el formato para descargar");
+					$("#modal-close").text("Cerrar");
 					//projetos
 					$("#persor-project").text("Proyectos personales");
 					$("#chocobo").text("Componente de calendario para rango de fechas en AngularJs.");
 					$("#coovalidator").text("Biblioteca en C# para la validación de TextBox y objetos.");
 					$("#excalibur").text("Componente de Dual List en AngularJs y bootstrap.");
 					$("#vuemonthcalendar").text("Componente para elección de mes y año en VueJs y VueMaterial.");
-					$("#coolreport").text("Biblioteca en C# para generar informes con Entity Framework.");
+					$("#stormreport").text("Biblioteca en C# para facilitar la creación de informes en ASP.NET.");
 					$("#vueduallist").text("Componente de doble lista en VueJs y VueMaterial.");
 					$("#beaconmusic").text("Jukebox para pubs, integrado con una aplicación móvil.");
-					$("#cooldatagrid").text("Biblioteca en C# para mejorar la interfaz de un DataGridView.");
-					$("#comandafacil").text("Sistema de codigo de barras para comercios.");
-					$("#coolsync").text("Biblioteca en C# para ejecutarse en multiproceso.");
+					$("#legendofgithub").text("Juego basado en las estadísticas del github del usuario.");
 					//projetos hackaton
 					$("#pagfarma").text("(GS1 BRASIL 2016 - Campeón) - Aplicación móvil para subasta de remedio de medicamentos.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Campeón) - Chatbot para ayudar al emprendedor a iniciar su negocio.");
@@ -88,25 +112,36 @@
 					$("#faculdade").text("Faculty Barão de Piratininga");
 					$("#curso").text("Information Systems");
 					$("#idiomas").text("LANGUAGES");
+					$("#statisticas").text("Statistic");
+					$("#foruns").text("Forums");
+					$(".modal-title").text("Choose the format for Download");
+					$("#modal-close").text("Close");
 					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experience");
-					$("#jobtegra-title").text("Web Developer");
+					$("#jobtegra-title").text("Full Stack Developer");
+					$("#jobfatec-title").text("Trainee in IT");
 					$("#job-desc-tegra").text("Development in several platforms and languages like C#, Java, Node Js and Angular.");
-					$("#tegra-job-time").text("2015 - Currently");
-					$("#my-project").html("<i id='project' class='fa fa-archive'></i>  Projects");
+					$("#job-desc-fatec").text("Development of queries in Oracle database.");
+					$("#tegra-job-time").text("Jan/2016 - Currently");
+					$("#p-p").html("<i id='professional-projects' class='fa fa-archive'></i>Professional Projects");
+					$("#p-pp").html("<i id='personal-projects' class='fa fa-child'></i>Personal projects");
+					$("#br-partners").text("BR Partners New Human Resources Portal that manages the entire department. The system enabled excellent monitoring of employees' activities, with metrics and reports that added a lot to the bank.");
+					$("#assai").text("System of reconciliation of invoices, the system allows the comparison between invoices issued by Sefaz with the invoices manually released by the fiscal department of Assaí, offering a quick validation if there is discrepancy between the launches.");
+					$("#banco-votorantim").text("Monthly and annual report with Bovespa stock movements, the system allows a detailed monitoring of all stock in the stock market of the bank's clients, making an accurate analysis with graphs and statistics.");
+					$("#prudential").text("System for awarding employees, the system provides metrics and statistics of each employee, thus allowing them to know which one got the most prominence, for these reasons the system got a great prominence among the managers.");
+					$("#horus").text("ERP that controls all company information. The system is currently in all branches of Assaí, this covers more than 120 stores, the system manages data, resources and processes, significantly increasing Assaí's power in decision making.");
 					//projetos
 					$("#persor-project").text("Personal projects");
 					$("#chocobo").text("Calendar component for date range in AngularJs.");
-					$("#coovalidator").text("C# Library for validation of TextBox and objects.");
+					$("#coovalidator").text("Library in C # for TextBox and validation objects.");
 					$("#excalibur").text("Dual List component in AngularJs and bootstrap.");
 					$("#vuemonthcalendar").text("Component for choosing month and year in VueJs and VueMaterial.");
-					$("#coolreport").text("C# Library to generate reports with Entity Framework.");
+					$("#stormreport").text("Library in C# on ASP.NET to facilitate in report creation.");
 					$("#vueduallist").text("Dual List component in VueJs and VueMaterial.");
 					$("#beaconmusic").text("Jukebox for pubs, integrated with a mobile application.");
-					$("#cooldatagrid").text("C# Library to improve the interface of a DataGridView.");
-					$("#comandafacil").text("Bar code system for trades.");
-					$("#coolsync").text("C# library for multithreaded execution.");
+					$("#cooldatagrid").text("Library in C # to improve the interface of a DataGridView.");
+					$("#githubapi").text("API to generate statistical data from the user's github.");
 					//projetos hackaton
 					$("#pagfarma").html("(GS1 BRASIL 2016 - Champion) - Mobile application for reverse auction of medicines.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Champion) - Chatbot to help the entrepreneur start their business.");
@@ -115,106 +150,6 @@
 					$("#relato-serasa").text("(SERASA EXPERIAN 2017) - Digital assistant to assist in credit analysis.");
 					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>SKILLS & PROFICIENCIES");
 				}
-			};
-
-			$scope.changeModalText = (language) => {
-				if (language === 'C#') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>Entity Framework <span class='badge'>50 Horas</span></li> 
-										<li class='list-group-item'>ASP NET MVC <span class='badge'>850 Horas</span></li> 
-										<li class='list-group-item'>Windows Form <span class='badge'>430 Horas</span></li> 
-										<li class='list-group-item'>NUnit <span class='badge'>10 Horas</span></li>
-										<li class='list-group-item'>Simple Injector <span class='badge'>10 Horas</span></li> 
-									</ul>`);
-				}
-				if (language === 'Angular') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>Diretivas <span class='badge'>180 Horas</span></li> 
-										<li class='list-group-item'>Routes <span class='badge'>90 Horas</span></li> 
-										<li class='list-group-item'>Controllers <span class='badge'>60 Horas</span></li> 
-										<li class='list-group-item'>Services <span class='badge'>60 Horas</span></li>
-										<li class='list-group-item'>Módulos <span class='badge'>45 Horas</span></li> 
-									</ul>`);
-				}
-				if (language === 'Java') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>Hibernate <span class='badge'>30 Horas</span></li> 
-										<li class='list-group-item'>JSP - Servlet <span class='badge'>180 Horas</span></li> 
-										<li class='list-group-item'>JUnit <span class='badge'>60 Horas</span></li> 
-										<li class='list-group-item'>JSF <span class='badge'>260 Horas</span></li>
-										<li class='list-group-item'>Java 8 <span class='badge'>80 Horas</span></li> 
-										<li class='list-group-item'>Android <span class='badge'>360 Horas</span></li>
-									</ul>`);
-				}
-				if (language === 'NodeJs') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>ExpressJs <span class='badge'>300 Horas</span></li> 
-										<li class='list-group-item'>Routes <span class='badge'>50 Horas</span></li> 
-										<li class='list-group-item'>Controller <span class='badge'>60 Horas</span></li> 
-										<li class='list-group-item'>Services <span class='badge'>40 Horas</span></li>
-									</ul>`);
-				}
-				if (language === 'SQL') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>Trigger <span class='badge'>10 Horas</span></li> 
-										<li class='list-group-item'>Functions <span class='badge'>15 Horas</span></li> 
-										<li class='list-group-item'>Stored Procedure <span class='badge'>60 Horas</span></li> 
-										<li class='list-group-item'>Views <span class='badge'>40 Horas</span></li>
-									</ul>`);
-				}
-				if (language === 'JavaScript') {
-					$scope.title = language;
-					$scope.body = $sce.trustAsHtml(`
-									<ul class='list-group'> 
-										<li class='list-group-item'>JQuery <span class='badge'>60 Horas</span></li> 
-										<li class='list-group-item'>VueJs <span class='badge'>40 Horas</span></li>
-										<li class='list-group-item'>Angular <span class='badge'>435 Horas</span></li>
-										<li class='list-group-item'>Prototype Patterns <span class='badge'>15 Horas</span></li> 
-										<li class='list-group-item'>JSON Syntax <span class='badge'>10 Horas</span></li> 
-									</ul>`);
-				}
-
-			};
-
-			$scope.downloadPdf = function () {
-				$scope.showSkills = true;
-				$(".profile").css("display", "none");
-				$("#user").css("display", "none");
-				$("#exp").css("display", "none");
-				$("#project").css("display", "none");
-				$("#skill").css("display", "none");
-				$("#foto").css("border-radius", "100px");
-
-				html2canvas(document.getElementById("printDiv"), {
-					onrendered: function (canvas) {
-
-						var imgData = canvas.toDataURL('image/png');
-						var doc = new jsPDF('p', 'mm', [390, 250]);
-
-						doc.addImage(imgData, 'PNG', -4, -0.2);
-						doc.save('MikeRodriguesDeLima-CV.pdf');
-
-						$timeout(function () {
-							$('#sppiner').modal('toggle');
-							$("#user").css("display", "");
-							$("#exp").css("display", "");
-							$("#project").css("display", "");
-							$("#skill").css("display", "");
-							$(".profile").css("display", "");
-							$scope.showSkills = false;
-						}, 2000);
-					}
-				});
 			};
 		}]);
 
