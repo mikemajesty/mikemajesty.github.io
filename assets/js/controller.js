@@ -1,10 +1,9 @@
 (function (angular) {
 	'use strict';
 	angular.module('app')
-		.controller('portifolioController', ['$scope', '$filter', '$sce', '$timeout', function ($scope, $filter, $sce, $timeout) {
+		.controller('portifolioController', ['$scope', '$filter', '$sce', '$timeout', '$http', function ($scope, $filter, $sce, $timeout, $http) {
 
 			$scope.year = (new Date().getFullYear() - 2015);
-			$scope.showSkills = false;
 
 			$scope.changeLanguage = (language) => {
 				if (language === 'BR') {
@@ -151,6 +150,43 @@
 					$("#skill-title").html("<i id='skill' class='fa fa-rocket'></i>SKILLS & PROFICIENCIES");
 				}
 			};
-		}]);
 
+			$scope.downloadPdf = function () {
+				$('#sppiner').modal('show');
+				$(".profile").css("display", "none");
+				$("#user").css("display", "none");
+				$("#exp").css("display", "none");
+				$("#professional-projects").css("display", "none");
+				$("#personal-projects").css("display", "none");
+				$("#skill").css("display", "none");
+				$("#statisticas-div").css("display", "none");
+				$("#foruns-div").css("display", "none");
+
+				$("#foto").css("border-radius", "100px");
+
+				html2canvas(document.getElementById("printDiv"), {
+					onrendered: function (canvas) {
+
+						var imgData = canvas.toDataURL('image/png', 0);
+						var doc = new jsPDF('p', 'mm', [390, 250]);
+
+						doc.addImage(imgData, 'PNG', -4, -0.2, '', '', '', 'FAST');
+						doc.save('MikeRodriguesDeLima-CV.pdf');
+
+						$timeout(function () {
+							$("#user").css("display", "");
+							$("#exp").css("display", "");
+							$("#professional-projects").css("display", "");
+							$("#personal-projects").css("display", "");
+							$("#skill").css("display", "");
+							$(".profile").css("display", "");
+							$("#statisticas-div").css("display", "");
+							$("#foruns-div").css("display", "");
+							$scope.showSkills = false;
+							$('#sppiner').modal('hide');
+						}, 2000);
+					}
+				});
+			};
+		}]);
 })(window.angular);

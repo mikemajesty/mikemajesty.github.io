@@ -18,22 +18,38 @@
 <body ng-app="app">
     <div class="wrapper" ng-controller="portifolioController">
         <div style="background-color: #F5F5F5;">
-            <button data-toggle="modal" data-target="#myModal" type="button" style="position:relative; left:40%; margin-bottom: 10px"
-                class="btn btn-warning">
-                <i class="fa fa-download fa-6"></i> Download
-            </button>
-            <a href="#" ng-click="changeLanguage('BR')">
-                <img alt="Spain" src="assets/images/Brazil.ico" style="margin-left: 56.9%;" width="40" height="30">
-            </a>
-            <a href="#" ng-click="changeLanguage('US')">
-                <img alt="Spain" src="assets/images/United-States.ico" width="40" height="30">
-            </a>
-            <a href="#" ng-click="changeLanguage('SP')">
-                <img alt="Spain" src="assets/images/Spain.ico" width="40" height="30">
-            </a>
-            <a href="#" ng-click="changeLanguage('UK')">
-                <img alt="Spain" src="assets/images/England.ico" width="40" height="30">
-            </a>
+            <div class="row" style="padding-bottom: 3%;">
+                <div class="span4 col-xs-4">
+                    <div class="document-download">
+                        <a ng-click="downloadPdf()">PDF</a>
+                    </div>
+                </div>
+                <div class="span4 col-xs-4">
+                    <div class="document-download">
+                        <a class="doc" ng-click="downloadPdf()">DOC</a>
+                    </div>
+                </div>
+                <div class="span4 col-xs-4">
+                    <div class="document-download">
+                        <a class="png" ng-click="downloadPdf()">JPG</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="text-align: center;">
+                <a href="#" class="col-xs-3" ng-click="changeLanguage('BR')">
+                    <img alt="Spain" src="assets/images/Brazil.ico" width="50" height="40">
+                </a>
+                <a href="#" class="col-xs-3" ng-click="changeLanguage('US')">
+                    <img alt="Spain" src="assets/images/United-States.ico" width="50" height="40">
+                </a>
+                <a href="#" class="col-xs-3" ng-click="changeLanguage('SP')">
+                    <img alt="Spain" src="assets/images/Spain.ico" width="50" height="40">
+                </a>
+                <a href="#" class="col-xs-3" ng-click="changeLanguage('UK')">
+                    <img alt="Spain" src="assets/images/England.ico" width="50" height="40">
+                </a>
+            </div>
         </div>
         <div id='printDiv' width="500" height="400">
             <div class="sidebar-wrapper" style="height: 1755px;min-height: 1528px;">
@@ -334,36 +350,6 @@
                 <div class="modal-body" style="width: 200px; height: 600px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; overflow:auto;">
                     <img style="padding-top: 180%;" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
                         alt="Foto">
-                </div>
-            </div>
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Escolha o formato para Download</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-body">
-
-                                <a target="_self" class="btn btn-primary" style="width: 100%; margin-bottom: 2%;" href="assets/arquivos/MikeRodriguesDeLima-CV.doc"
-                                    download="MikeRodriguesDeLima-CV.doc">
-                                    <i class="fa fa-file-word-o"></i> Word
-                                </a>
-                                <a target="_self" class="btn btn-primary" style="width: 100%; margin-bottom: 2%;" href="assets/arquivos/MikeRodriguesDeLima-CV.pdf"
-                                    download="MikeRodriguesDeLima-CV.pdf">
-                                    <i class="fa fa-file-pdf-o"></i> PDF
-                                </a>
-                                <a target="_self" class="btn btn-primary" style="width: 100%;" href="assets/arquivos/MikeRodriguesDeLima-CV-1.jpg" download="MikeRodriguesDeLima-CV-1.jpg">
-                                    <i class="fa fa-file-image-o"></i> JPG
-                                </a>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" id="modal-close">Fechar</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
