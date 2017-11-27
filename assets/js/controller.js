@@ -157,7 +157,7 @@
 				$("#foruns-div").css("display", "none");
 
 				$("#foto").css("border-radius", "100px");
-
+				$("#sppiner").css("display", "none");
 				$('#sppiner').modal('hide');
 				$("#sppiner").css("display", "none");
 				html2canvas(document.getElementById("printDiv"), {
