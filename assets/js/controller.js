@@ -17,7 +17,6 @@
 					$("#faculdade").text("Faculdade Barão de Piratininga");
 					$("#curso").text("Sistemas de Informação");
 					$("#idiomas").text("IDIOMAS");
-					$(".modal-title").text("Escolha o formato para Download");
 					$("#statisticas").text("Estatística");
 					$("#foruns").text("Fóruns");
 					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
@@ -37,6 +36,7 @@
 					$("#githubapi").text("API para gerar dados estatísticos a partir do github do usuário.");
 					$("#horus").text("ERP que controla todas as informações da empresa. O sistema está atualmente em todas as filias do Assaí, isso abrange mais de 120 lojas, o sistema gerencia dados, recursos e processos, aumentando significamente o poder do Assaí em tomada de decisões.");
 					$("#modal-close").text("Fechar");
+					$("#myModalDowbloadLabel").text("Escolha o formato do arquivo para download.");
 					//projetos
 					$("#persor-project").text("Projetos pessoais");
 					$("#chocobo").text("Componente de calendário para range de datas em AngularJs.");
@@ -83,8 +83,8 @@
 					$("#prudential").text("El sistema de premiación de colaboradores, el sistema proporciona métricas y estadísticas de cada colaborador, permitiendo así saber entre ellos cuál obtuvo el mayor destaque, por esos motivos el sistema obtuvo un gran destaque entre los gestores.");
 					$("#githubapi").text("API para generar datos estadísticos desde el github del usuario.");
 					$("#horus").text("ERP que controla toda la información de la empresa. El sistema está actualmente en todas las filas de Assaí, que abarca más de 120 tiendas, el sistema administra datos, recursos y procesos, aumentando significativamente el poder del Assaí en la toma de decisiones.");
-					$(".modal-title").text("Seleccione el formato para descargar");
 					$("#modal-close").text("Cerrar");
+					$("#myModalDowbloadLabel").text("Seleccione el formato del archivo para descargar.");
 					//projetos
 					$("#persor-project").text("Proyectos personales");
 					$("#chocobo").text("Componente de calendario para rango de fechas en AngularJs.");
@@ -113,7 +113,6 @@
 					$("#idiomas").text("LANGUAGES");
 					$("#statisticas").text("Statistic");
 					$("#foruns").text("Forums");
-					$(".modal-title").text("Choose the format for Download");
 					$("#modal-close").text("Close");
 					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
@@ -130,6 +129,7 @@
 					$("#banco-votorantim").text("Monthly and annual report with Bovespa stock movements, the system allows a detailed monitoring of all stock in the stock market of the bank's clients, making an accurate analysis with graphs and statistics.");
 					$("#prudential").text("System for awarding employees, the system provides metrics and statistics of each employee, thus allowing them to know which one got the most prominence, for these reasons the system got a great prominence among the managers.");
 					$("#horus").text("ERP that controls all company information. The system is currently in all branches of Assaí, this covers more than 120 stores, the system manages data, resources and processes, significantly increasing Assaí's power in decision making.");
+					$("#myModalDowbloadLabel").text("Choose the format of the file to download.");
 					//projetos
 					$("#persor-project").text("Personal projects");
 					$("#chocobo").text("Calendar component for date range in AngularJs.");
@@ -152,6 +152,7 @@
 			};
 
 			$scope.downloadPdf = function () {
+				$("#myModal").modal("hide");
 				$('#sppiner').modal('show');
 				$(".profile").css("display", "none");
 				$("#user").css("display", "none");
@@ -164,9 +165,11 @@
 
 				$("#foto").css("border-radius", "100px");
 
+				$('#sppiner').modal('hide');
+				$("#sppiner").css("display", "none");
+				$("#myModal").css("display", "none");
 				html2canvas(document.getElementById("printDiv"), {
 					onrendered: function (canvas) {
-
 						var imgData = canvas.toDataURL('image/png', 0);
 						var doc = new jsPDF('p', 'mm', [390, 250]);
 
@@ -183,8 +186,7 @@
 							$("#statisticas-div").css("display", "");
 							$("#foruns-div").css("display", "");
 							$scope.showSkills = false;
-							$('#sppiner').modal('hide');
-						}, 2000);
+						}, 1000);
 					}
 				});
 			};
