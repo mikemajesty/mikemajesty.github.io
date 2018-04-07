@@ -118,10 +118,10 @@ p {
 
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .sidebar-wrapper .degree {
