@@ -17,7 +17,7 @@
 					$("#faculdade").text("Faculdade Barão de Piratininga");
 					$("#curso").text("Sistemas de Informação");
 					$("#idiomas").text("IDIOMAS");
-					$("#statisticas").text("Estatística");
+					$("#statisticas").text("Comunidade Open Source");
 					$("#foruns").text("Fóruns");
 					$("#portugues").html("Português <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
@@ -50,6 +50,10 @@
 					$("#legendofgithub").text("Jogo baseado nas estatísticas do github do usuário.");
 
 					//projetos hackaton
+					$("#campeao").text("Campeão");
+					$("#campeao2").text("Campeão");
+					$("#semifinalista").text("Semifinalista");
+					$("#vicecampeao").text("Vice Campeão");
 					$("#pagfarma").text("(GS1 BRASIL 2016 - Campeão) - Aplicativo mobile para leilão reverso de remédios.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Campeão) - Chatbot para auxiliar o empreendedor a iniciar seu negócio.");
 					$("#hackzurich").text("(HACK ZURICH 2016) - Aplicação para auxiliar encontrar pessoas em caso de desastres.");
@@ -65,7 +69,7 @@
 					$("#faculdade").text("Facultad Barão de Piratininga");
 					$("#curso").text("Sistema de Información");
 					$("#idiomas").text("IDIOMAS");
-					$("#statisticas").text("Estadística");
+					$("#statisticas").text("Comunidad Open Source");
 					$("#foruns").text("Foros de discusión");
 					$("#portugues").html("Portugués <span class='lang-desc' id='nativo'>(Nativo)</span>");
 					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
@@ -96,6 +100,11 @@
 					$("#beaconmusic").text("Jukebox para pubs, integrado con una aplicación móvil.");
 					$("#legendofgithub").text("Juego basado en las estadísticas del github del usuario.");
 					//projetos hackaton
+
+					$("#campeao").text("Campeón");
+					$("#campeao2").text("Campeón");
+					$("#semifinalista").text("Semifinalista");
+					$("#vicecampeao").text("Vice Campeón");
 					$("#pagfarma").text("(GS1 BRASIL 2016 - Campeón) - Aplicación móvil para subasta de remedio de medicamentos.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Campeón) - Chatbot para ayudar al emprendedor a iniciar su negocio.");
 					$("#hackzurich").text("(HACK ZURICH 2016) - Aplicación para ayudar a encontrar personas en caso de desastres.");
@@ -111,7 +120,7 @@
 					$("#faculdade").text("Faculty Barão de Piratininga");
 					$("#curso").text("Information Systems");
 					$("#idiomas").text("LANGUAGES");
-					$("#statisticas").text("Statistic");
+					$("#statisticas").text("Open Source Community");
 					$("#foruns").text("Forums");
 					$("#portugues").html("Portuguese <span class='lang-desc' id='nativo'>(Native)</span>");
 					$("#ingles").html("English <span class='lang-desc'>(Intermediate)</span>");
@@ -142,6 +151,10 @@
 					$("#cooldatagrid").text("Library in C # to improve the interface of a DataGridView.");
 					$("#githubapi").text("API to generate statistical data from the user's github.");
 					//projetos hackaton
+					$("#campeao").text("Champion");
+					$("#campeao2").text("Champion");
+					$("#semifinalista").text("Semifinalist");
+					$("#vicecampeao").text("Vice Champion");
 					$("#pagfarma").html("(GS1 BRASIL 2016 - Champion) - Mobile application for reverse auction of medicines.");
 					$("#econnect").text("(UOL HOST 2016 - Vice Champion) - Chatbot to help the entrepreneur start their business.");
 					$("#hackzurich").text("(HACK ZURICH 2016) - Application to help find people in case of disasters.");
