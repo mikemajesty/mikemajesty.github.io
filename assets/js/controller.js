@@ -23,6 +23,7 @@
 					$("#ingles").html("Inglês <span class='lang-desc'>(Intermediário)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiências");
 					$("#jobtegra-title").text("Desenvolvedor Full Stack");
+					$("#jobibm-title").text("Desenvolvedor Full Stack");
 					$("#accenture-job-title").text("Desenvolvedor Full Stack");
 					$("#job-desc-tegra").text("Desenvolvimento em diversas plataformas e linguagens como: C#, Java , Node Js e Angular.");
 					$("#tegra-job-time").text("Jan/2016 - Jan/2018");
@@ -79,6 +80,7 @@
 					$("#ingles").html("Inglés <span class='lang-desc'>(Intermedio)</span>");
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experiencias");
 					$("#jobtegra-title").text("Desarrollador Full Stack");
+					$("#jobibm-title").text("Desarrollador Full Stack");
 					$("#accenture-job-title").text("Desarrollador Full Stack");
 					$("#job-desc-tegra").text("Desarrollo en diversas plataformas y lenguajes como C#, Java, Node Js y Angular.");
 					$("#job-desc-accenture").text("Desarrollo de aplicaciones utilizando Node Js y Angular 6.");
@@ -136,6 +138,7 @@
 					$("#experience").html("<i id='exp' class='fa fa-briefcase'></i>Experience");
 					$("#jobtegra-title").text("Full Stack Developer");
 					$("#accenture-job-title").text("Full Stack Developer");
+					$("#jobibm-title").text("Full Stack Developer");
 					$(".time.time-accenture").text("Jan/2019 - Currently");
 					$("#job-desc-tegra").text("Development in several platforms and languages like C#, Java, Node Js and Angular.");
 					$("#job-desc-accenture").text("Development of applications using Node Js and Angular 6.");
