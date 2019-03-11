@@ -10,6 +10,11 @@
       $scope.year = new Date().getFullYear() - 2016;
 
       $scope.changeLanguage = language => {
+        $("#quote-carousel").carousel({
+          pause: true,
+          interval: 4000
+        });
+
         if (language === "BR") {
           $("#introduction").text(`Tenho mais de ${
             $scope.year
