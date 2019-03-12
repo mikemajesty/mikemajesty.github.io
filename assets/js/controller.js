@@ -138,6 +138,10 @@
           $("#hack-gs1-slide").text(
             "Esse Hackathon tem um significado especial, pois logo no primeiro evento tive a oportunidade de vencer e ganhar como prêmio participar do maior Hackathon da Europa, que veio acompanhado com minha primeira primeira viagem internacional. Enfim foi uma grande experiência, onde pude aprender muito com novas pessoas e cultura."
           );
+
+          $("#hack-uol-slide").text(
+            "Esse Hackathon foi meu terceiro e tive a oportunidade de ficar em segundo lugar, fiz grandes amizades e conheci amigos incríveis, fica meu agradecimento para toda a equipe do UOL HOST e os integrantes que fizeram parte desse grupo divertido e vitorioso."
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -261,6 +265,10 @@
           $("#hack-gs1-slide").text(
             "Este Hackathon tiene un significado especial, pues luego en el primer evento tuve la oportunidad de ganar y ganar como premio participar del mayor Hackathon de Europa, que vino acompañado con mi primer primer viaje internacional. En fin fue una gran experiencia, donde pude aprender mucho con nuevas personas y cultura."
           );
+
+          $("#hack-uol-slide").text(
+            "Este Hackathon fue mi tercer y tuve la oportunidad de quedarme en segundo lugar, hice grandes amistades y conocí a amigos increíbles, queda mi agradecimiento para todo el equipo de UOL HOST y los integrantes que formaron parte de ese grupo divertido y victorioso."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -378,6 +386,10 @@
 
           $("#hack-gs1-slide").text(
             "This Hackathon has a special meaning, because in the first event I had the opportunity to win and win as a prize to participate in the largest Hackathon in Europe, which came with my first international trip. Anyway it was a great experience, where I was able to learn a lot with new people and culture."
+          );
+
+          $("#hack-uol-slide").text(
+            "This Hackathon was my third and I had the opportunity to stay in second place, made great friendships and met incredible friends, thanks to all the staff of UOL HOST and the members who were part of this group fun and victorious."
           );
         }
       };
