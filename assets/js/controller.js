@@ -134,6 +134,10 @@
           $("#hack-zurich-slide").text(
             "Após ganhar o Hackathon da GS1 Brasil, ganhamos como prêmio representar o país no maior Hackathon da Europa, foi uma das conquistas mais incríveis e significativas para um profissional que na época ainda era estagiário"
           );
+
+          $("#hack-gs1-slide").text(
+            "Esse Hackathon tem um significado especial, pois logo no primeiro evento tive a oportunidade de vencer e ganhar como prêmio participar do maior Hackathon da Europa, que veio acompanhado com minha primeira primeira viagem internacional. Enfim foi uma grande experiência, onde pude aprender muito com novas pessoas e cultura."
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -253,6 +257,10 @@
           $("#hack-zurich-slide").text(
             "Después de ganar el Hackathon de GS1 Brasil, ganamos como premio representar al país en el mayor Hackathon de Europa, fue una de las conquistas más increíbles y significativas para un profesional que en la época todavía era pasante."
           );
+
+          $("#hack-gs1-slide").text(
+            "Este Hackathon tiene un significado especial, pues luego en el primer evento tuve la oportunidad de ganar y ganar como premio participar del mayor Hackathon de Europa, que vino acompañado con mi primer primer viaje internacional. En fin fue una gran experiencia, donde pude aprender mucho con nuevas personas y cultura."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -366,6 +374,10 @@
 
           $("#hack-zurich-slide").text(
             "After winning the Hackathon of GS1 Brazil, we won the prize to represent the country in the largest Hackathon in Europe, was one of the most incredible and significant achievements for a professional who was still an intern at the time."
+          );
+
+          $("#hack-gs1-slide").text(
+            "This Hackathon has a special meaning, because in the first event I had the opportunity to win and win as a prize to participate in the largest Hackathon in Europe, which came with my first international trip. Anyway it was a great experience, where I was able to learn a lot with new people and culture."
           );
         }
       };
