@@ -158,6 +158,8 @@
           $("#hack-ibm-slide").text(
             "Essa era a equipe IBM, onde pude aprender muito com pessoas extremamente preocupadas com diversidade e o bem estar dos membros da equipe, com certeza foi uma das etapas mais relevantes e difíceis da minha curta carreira, pois além de mudar de uma empresa pequena para uma gigante, ainda teve o fator de mudança de cidade. Tenho um carinho enorme pela IBM e pelas pessoas que fizeram parte da minha equipe no período que fiquei por lá."
           );
+
+          $("#biogragh").text("Biografia Profissional");
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -301,6 +303,8 @@
           $("#hack-ibm-slide").text(
             "Este era el equipo IBM, donde pude aprender mucho con personas extremadamente preocupadas por la diversidad y el bienestar de los miembros del equipo, con certeza fue una de las etapas más relevantes y difíciles de mi corta carrera, pues además de cambiar de una pequeña empresa a una empresa pequeña el gigante, todavía tuvo el factor de cambio de ciudad. Tengo un cariño enorme por IBM y por las personas que formaron parte de mi equipo en el período que me quedé allí."
           );
+
+          $("#biogragh").text("Biografía Profesional");
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -439,6 +443,8 @@
           $("#hack-ibm-slide").text(
             "This was the IBM team, where I was able to learn a lot from people extremely concerned about diversity and the well-being of team members, it was certainly one of the most relevant and difficult steps of my short career, as well as moving from a small company to a giant, still had the factor of city change. I have a great affection for IBM and the people who were part of my team during the time I was there."
           );
+
+          $("#biogragh").text("Professional Biography");
         }
       };
 
