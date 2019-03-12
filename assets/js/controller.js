@@ -142,6 +142,10 @@
           $("#hack-uol-slide").text(
             "Esse Hackathon foi meu terceiro e tive a oportunidade de ficar em segundo lugar, fiz grandes amizades e conheci amigos incríveis, fica meu agradecimento para toda a equipe do UOL HOST e os integrantes que fizeram parte desse grupo divertido e vitorioso."
           );
+
+          $("#hack-serasa-slide").text(
+            "Esse Hackathon do Serasa foi marcante, pois o projeto criado pela nossa equipe foi muito bem recebido pela equipe do Serasa, onde com dicas e críticas pudemos acrescentar muitas características importantes para o nosso produto e para os clientes do Serasa."
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -269,6 +273,10 @@
           $("#hack-uol-slide").text(
             "Este Hackathon fue mi tercer y tuve la oportunidad de quedarme en segundo lugar, hice grandes amistades y conocí a amigos increíbles, queda mi agradecimiento para todo el equipo de UOL HOST y los integrantes que formaron parte de ese grupo divertido y victorioso."
           );
+
+          $("#hack-serasa-slide").text(
+            "Este Hackathon de Serasa fue notable, pues el proyecto creado por nuestro equipo fue muy bien recibido por el equipo de Serasa, donde con consejos y críticas pudimos añadir muchas características importantes para nuestro producto y para los clientes de Serasa."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -390,6 +398,10 @@
 
           $("#hack-uol-slide").text(
             "This Hackathon was my third and I had the opportunity to stay in second place, made great friendships and met incredible friends, thanks to all the staff of UOL HOST and the members who were part of this group fun and victorious."
+          );
+
+          $("#hack-serasa-slide").text(
+            "This Serasa Hackathon was remarkable because the project created by our team was very well received by the Serasa team, where with tips and criticisms we were able to add many important features to our product and Serasa customers."
           );
         }
       };
