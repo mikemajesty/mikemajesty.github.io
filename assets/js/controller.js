@@ -146,6 +146,10 @@
           $("#hack-serasa-slide").text(
             "Esse Hackathon do Serasa foi marcante, pois o projeto criado pela nossa equipe foi muito bem recebido pela equipe do Serasa, onde com dicas e críticas pudemos acrescentar muitas características importantes para o nosso produto e para os clientes do Serasa."
           );
+
+          $("#hack-santander-slide").text(
+            "Esse Hackathon foi inacreditável, fizemos um produto junto com a empresa renomada de cartão de crédito, que foi muito elogiado pela equipe da empresa, onde com isso surgiram convites futuros para eventos, conhecemos pessoas incríveis, onde pude aprender muito com a qualificação e a experiências dos profissionais envolvidos."
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -277,6 +281,10 @@
           $("#hack-serasa-slide").text(
             "Este Hackathon de Serasa fue notable, pues el proyecto creado por nuestro equipo fue muy bien recibido por el equipo de Serasa, donde con consejos y críticas pudimos añadir muchas características importantes para nuestro producto y para los clientes de Serasa."
           );
+
+          $("#hack-santander-slide").text(
+            "Este Hackathon fue increíble, hicimos un producto junto con la empresa renombrada de tarjetas de crédito, que fue muy elogiado por el equipo de la empresa, donde con eso surgieron invitaciones futuras para eventos, conocemos gente increíble, donde pude aprender mucho de la calificación y las experiencias de los profesionales involucrados."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -402,6 +410,10 @@
 
           $("#hack-serasa-slide").text(
             "This Serasa Hackathon was remarkable because the project created by our team was very well received by the Serasa team, where with tips and criticisms we were able to add many important features to our product and Serasa customers."
+          );
+
+          $("#hack-santander-slide").text(
+            "This Hackathon was unbelievable, we made a product together with the renowned credit card company, which was highly praised by the company team, where with this appeared future invitations to events, met incredible people, where I learned a lot with qualification and experiences of the professionals involved."
           );
         }
       };
