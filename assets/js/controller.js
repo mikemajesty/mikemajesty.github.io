@@ -130,6 +130,10 @@
 
           $("#nuget-lib").text("6 Bibliotecas");
           $("#npm-lib").text("4 Bibliotecas");
+
+          $("#hack-zurich-slide").text(
+            "Após ganhar o Hackathon da GS1 Brasil, ganhamos como prêmio representar o país no maior Hackathon da Europa, foi uma das conquistas mais incríveis e significativas para um profissional que na época ainda era estagiário"
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -245,6 +249,10 @@
 
           $("#nuget-lib").text("6 Bibliotecas");
           $("#npm-lib").text("4 Bibliotecas");
+
+          $("#hack-zurich-slide").text(
+            "Después de ganar el Hackathon de GS1 Brasil, ganamos como premio representar al país en el mayor Hackathon de Europa, fue una de las conquistas más increíbles y significativas para un profesional que en la época todavía era pasante."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -355,6 +363,10 @@
 
           $("#nuget-lib").text("6 Libraries");
           $("#npm-lib").text("4 Libraries");
+
+          $("#hack-zurich-slide").text(
+            "After winning the Hackathon of GS1 Brazil, we won the prize to represent the country in the largest Hackathon in Europe, was one of the most incredible and significant achievements for a professional who was still an intern at the time."
+          );
         }
       };
 
