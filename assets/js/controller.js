@@ -150,6 +150,14 @@
           $("#hack-santander-slide").text(
             "Esse Hackathon foi inacreditável, fizemos um produto junto com a empresa renomada de cartão de crédito, que foi muito elogiado pela equipe da empresa, onde com isso surgiram convites futuros para eventos, conhecemos pessoas incríveis, onde pude aprender muito com a qualificação e a experiências dos profissionais envolvidos."
           );
+
+          $("#hack-tegra-slide").text(
+            "Essa era a equipe Tegra, onde iniciei minha carreira como estagiário em desenvolvimento de sistemas, fiquei lá por dois anos, aprendi muito nesse tempo e deixei muitos amigos que fazem parte da minha vida até hoje. A gratidão e o carinho que tenho por essa empresa e as pessoas que fazem e fizeram parte dela é imensurável."
+          );
+
+          $("#hack-ibm-slide").text(
+            "Essa era a equipe IBM, onde pude aprender muito com pessoas extremamente preocupadas com diversidade e o bem estar dos membros da equipe, com certeza foi uma das etapas mais relevantes e difíceis da minha curta carreira, pois além de mudar de uma empresa pequena para uma gigante, ainda teve o fator de mudança de cidade. Tenho um carinho enorme pela IBM e pelas pessoas que fizeram parte da minha equipe no período que fiquei por lá."
+          );
         }
         if (language === "SP") {
           $("#introduction").text(
@@ -285,6 +293,14 @@
           $("#hack-santander-slide").text(
             "Este Hackathon fue increíble, hicimos un producto junto con la empresa renombrada de tarjetas de crédito, que fue muy elogiado por el equipo de la empresa, donde con eso surgieron invitaciones futuras para eventos, conocemos gente increíble, donde pude aprender mucho de la calificación y las experiencias de los profesionales involucrados."
           );
+
+          $("#hack-tegra-slide").text(
+            "Esta era el equipo Tegra, donde inicié mi carrera como aprendiz en desarrollo de sistemas, me quedé allí por dos años, aprendí mucho en ese tiempo y dejé a muchos amigos que forman parte de mi vida hasta hoy. La gratitud y el cariño que tengo por esa empresa y las personas que hacen e hicieron parte de ella es inmensurable."
+          );
+
+          $("#hack-ibm-slide").text(
+            "Este era el equipo IBM, donde pude aprender mucho con personas extremadamente preocupadas por la diversidad y el bienestar de los miembros del equipo, con certeza fue una de las etapas más relevantes y difíciles de mi corta carrera, pues además de cambiar de una pequeña empresa a una empresa pequeña el gigante, todavía tuvo el factor de cambio de ciudad. Tengo un cariño enorme por IBM y por las personas que formaron parte de mi equipo en el período que me quedé allí."
+          );
         }
         if (language === "US" || language === "UK") {
           $("#introduction").text(
@@ -414,6 +430,14 @@
 
           $("#hack-santander-slide").text(
             "This Hackathon was unbelievable, we made a product together with the renowned credit card company, which was highly praised by the company team, where with this appeared future invitations to events, met incredible people, where I learned a lot with qualification and experiences of the professionals involved."
+          );
+
+          $("#hack-tegra-slide").text(
+            "This was the Tegra team, where I started my career as a systems development trainee, stayed there for two years, learned a lot at the time, and left many friends who are part of my life to this day. The gratitude and affection I have for this company and the people who do and have been part of it are immeasurable."
+          );
+
+          $("#hack-ibm-slide").text(
+            "This was the IBM team, where I was able to learn a lot from people extremely concerned about diversity and the well-being of team members, it was certainly one of the most relevant and difficult steps of my short career, as well as moving from a small company to a giant, still had the factor of city change. I have a great affection for IBM and the people who were part of my team during the time I was there."
           );
         }
       };
