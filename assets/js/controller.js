@@ -69,8 +69,8 @@
           $("#s2m").text(
             "Sistema desenvolvido diretamente para o Presidente do Santander Brasil, com a função de fornecer gráficos e métricas de todos os gestores de entrega do banco, fornecendo assim material para análise individual e geral da saúde dos projetos do Santander."
           );
-          $("#prudential").text(
-            "Sistema para premiação de colaboradores, o sistema disponibiliza métricas e estatísticas de cada colaborador, permitindo assim saber dentre eles qual obteve o maior destaque, por esses motivos o sistema obteve um grande destaque entre os gestores."
+          $("#santander-sara").text(
+            "Chatbot desenvolvido em nodejs usando Watson da IBM. Projeto tem como finalidade auxiliar os gerentes de todas as agência do Brasil a tirar dúvidas sobre produtos e serviços do Santander em território nacional."
           );
           $("#githubapi").text(
             "API para gerar dados estatísticos a partir do github do usuário."
@@ -218,8 +218,8 @@
           $("#s2m").text(
             "Sistema desarrollado directamente para el Presidente del Santander Brasil, con la función de proporcionar gráficos y métricas de todos los gestores de entrega del banco, proporcionando así material para análisis individual y general de la salud de los proyectos del Santander."
           );
-          $("#prudential").text(
-            "El sistema de premiación de colaboradores, el sistema proporciona métricas y estadísticas de cada colaborador, permitiendo así saber entre ellos cuál obtuvo el mayor destaque, por esos motivos el sistema obtuvo un gran destaque entre los gestores."
+          $("#santander-sara").text(
+            "Chatbot desarrollado en nodejs utilizando IBM Watson. El objetivo del proyecto es ayudar a los gerentes de todas las sucursales en Brasil a responder preguntas sobre los productos y servicios de Santander en el país."
           );
           $("#githubapi").text(
             "API para generar datos estadísticos desde el github del usuario."
@@ -367,8 +367,8 @@
           $("#s2m").text(
             "System developed directly for the President of Santander Brasil, with the function of providing graphs and metrics of all the bank's delivery managers, thus providing material for individual and general health analysis of Santander's projects."
           );
-          $("#prudential").text(
-            "System for awarding employees, the system provides metrics and statistics of each employee, thus allowing them to know which one got the most prominence, for these reasons the system got a great prominence among the managers."
+          $("#santander-sara").text(
+            "Chatbot developed on nodejs using Watson from IBM. Project aims to help managers of all branches in Brazil to answer questions about Santander products and services in the country."
           );
           $("#horus").text(
             "ERP that controls all company information. The system is currently in all branches of Assaí, this covers more than 120 stores, the system manages data, resources and processes, significantly increasing Assaí's power in decision making."
