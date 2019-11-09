@@ -159,6 +159,10 @@
             "Essa era a equipe IBM, onde pude aprender muito com pessoas extremamente preocupadas com diversidade e o bem estar dos membros da equipe, com certeza foi uma das etapas mais relevantes e difíceis da minha curta carreira, pois além de mudar de uma empresa pequena para uma gigante, ainda teve o fator de mudança de cidade. Tenho um carinho enorme pela IBM e pelas pessoas que fizeram parte da minha equipe no período que fiquei por lá."
           );
 
+          $("#hack-accenture-slide").text(
+            "Essa era a equipe Accenture, onde pude trabalhar com meu primeiro projeto com inteligência artificial usando Watson da IBM. O projeto é usado em todo Brasil pelos gerentes de banco, usando o mesmo para tirar dúvidas sobre serviços e produtos do Santander. O projeto foi um sucesso ganhando premios e reconhecimento pela qualidade e benefícios que o projeto trouxe ao banco."
+          );
+
           $("#biogragh").text("Biografia Profissional");
         }
         if (language === "SP") {
@@ -304,6 +308,10 @@
             "Este era el equipo IBM, donde pude aprender mucho con personas extremadamente preocupadas por la diversidad y el bienestar de los miembros del equipo, con certeza fue una de las etapas más relevantes y difíciles de mi corta carrera, pues además de cambiar de una pequeña empresa a una empresa pequeña el gigante, todavía tuvo el factor de cambio de ciudad. Tengo un cariño enorme por IBM y por las personas que formaron parte de mi equipo en el período que me quedé allí."
           );
 
+          $("#hack-accenture-slide").text(
+            "Este fue el equipo de Accenture, donde pude trabajar en mi primer proyecto de inteligencia artificial utilizando Watson de IBM. Los gerentes bancarios utilizan el proyecto en todo Brasil, para responder preguntas sobre los servicios y productos de Santander. El proyecto fue un éxito ganador de premios y reconocimiento por la calidad y los beneficios que el proyecto trajo al banco."
+          );
+
           $("#biogragh").text("Biografía Profesional");
         }
         if (language === "US" || language === "UK") {
@@ -442,6 +450,10 @@
 
           $("#hack-ibm-slide").text(
             "This was the IBM team, where I was able to learn a lot from people extremely concerned about diversity and the well-being of team members, it was certainly one of the most relevant and difficult steps of my short career, as well as moving from a small company to a giant, still had the factor of city change. I have a great affection for IBM and the people who were part of my team during the time I was there."
+          );
+
+          $("#hack-accenture-slide").text(
+            "This was the Accenture team, where I was able to work on my first artificial intelligence project using IBM's Watson. The project is used throughout Brazil by bank managers, using it to answer questions about Santander services and products. The project was a success winning awards and recognition for the quality and benefits that the project brought to the bank."
           );
 
           $("#biogragh").text("Professional Biography");
